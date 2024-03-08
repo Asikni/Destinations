@@ -9,7 +9,7 @@ function Hero() {
     <div className="hero">
       <Header />
  
-      <div className="top-heading" style={{ paddingTop: "100px" }}>
+      <div className="top-heading" style={{ paddingTop: "130px" }}>
         {" "}
         Explore Kashmir's Beauty{" "}
       </div>

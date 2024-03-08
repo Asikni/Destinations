@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   width: 100vw;
   padding-top: 30px;
 }
@@ -28,16 +29,16 @@
 .top-heading {
   font-family: Poppins;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
   letter-spacing: 0.54em;
 }
 .main-heading {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 84px;
+  font-size: 60px;
   color: #fffef5;
-  padding-top: 25px;
+  padding-top: 35px;
   padding-bottom: 100px;
 }
 .buttonsHeroSection {
@@ -51,21 +52,19 @@
 
 .side-heading {
   position: absolute;
-  border: 1px solid red;
   left: 0px;
-  top: 80px;
+  top: 30px;
   rotate: 270deg;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .btn-1 {
-  border: 2px solid red;
   width: 200px;
   height: 50px;
   border-radius: 10px;
   background-color: #ffa90f;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .btn-2 {
@@ -77,10 +76,9 @@
 }
 
 .logos {
-  border: 1px solid green;
   position: absolute;
-  left: 90px;
-  top: -120px;
+  left: 60px;
+  top: -150px;
   display: flex;
   flex-direction: column;
   align-items: center;
