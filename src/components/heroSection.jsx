@@ -2,15 +2,33 @@ import Button from "../buttons";
 import Header from "./header";
 
 function Hero() {
+  const changeImages = () => {
+    
+  };
   return (
     <div className="hero">
       <Header />
-
-      <div className="top-heading" style={{ paddingTop: "350px" }}>
+ 
+      <div className="top-heading" style={{ paddingTop: "100px" }}>
         {" "}
         Explore Kashmir's Beauty{" "}
       </div>
-      <div className="main-heading">Adventure in Paradise</div>
+      <div className="arrows" style={{ display: "flex" }}>
+        <div
+          style={{ fontSize: "100px", paddingRight: "20px", cursor: "pointer" }}
+        >
+          {" "}
+          &lt;{" "}
+        </div>
+
+        <div className="main-heading">Adventure in Paradise</div>
+        <div
+          style={{ fontSize: "100px", paddingLeft: "20px", cursor: "pointer" }}
+          onClick={changeImages}
+        >
+          >
+        </div>
+      </div>
       <div className="buttonsHeroSection">
         <Button btnClass={"btn-1"}>Find out more</Button>
         <Button btnClass={"btn-2"}> Contact Us </Button>
