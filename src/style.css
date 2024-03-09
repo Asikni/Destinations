@@ -112,3 +112,16 @@
 .sonamarg {
   height: 500px;
 }
+.campingSpot {
+  border: solid 1px red;
+  width: 80%;
+  height: 250px;
+  border-radius: 50%;
+  left: 55px;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  position: absolute;
+  top: 0px;
+  color: #ffa90f;
+}

@@ -15,7 +15,7 @@ function Hero() {
       </div>
       <div className="arrows" style={{ display: "flex" }}>
         <div
-          style={{ fontSize: "100px", paddingRight: "20px", cursor: "pointer" }}
+          style={{ fontSize: "100px", paddingRight: "150px", cursor: "pointer", color:"#FFA90F" }}
         >
           {" "}
           &lt;{" "}
@@ -23,10 +23,10 @@ function Hero() {
 
         <div className="main-heading">Adventure in Paradise</div>
         <div
-          style={{ fontSize: "100px", paddingLeft: "20px", cursor: "pointer" }}
+          style={{ fontSize: "100px", paddingLeft: "150px", cursor: "pointer",color:"#FFA90F" }}
           onClick={changeImages}
         >
-          >
+          {">"}
         </div>
       </div>
       <div className="buttonsHeroSection">

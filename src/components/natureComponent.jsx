@@ -8,7 +8,7 @@ function NatureComp() {
         <img
           src="natureimage1.svg"
           alt="nature image"
-          style={{ width: "600px", height: "630px", backgroundSize: "auto" }}
+          style={{ width: "600px", height: "635px", backgroundSize: "auto" }}
         ></img>
       </div>
       <div
