@@ -139,3 +139,11 @@
   position: absolute;
  
 }
+
+input[type="text"], textarea {
+  
+  background-color : transparent; 
+  border:none
+  
+
+}

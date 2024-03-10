@@ -4,6 +4,7 @@ import Treks from "./components/trekSection";
 import NatureComp from "./components/natureComponent";
 import HiddenGems from "./components/hiddenSection";
 import StoriesSection from "./components/storiesSection";
+import Contact from "./components/contactSection";
 import Footer from "./components/footerSection";
 
 
@@ -15,6 +16,7 @@ function App() {
       <HiddenGems />
       <Treks />
       <StoriesSection />
+      <Contact />
       <Footer />
     </div>
   );
