@@ -3,6 +3,8 @@ import Hero from "./components/heroSection";
 import Treks from "./components/trekSection";
 import NatureComp from "./components/natureComponent";
 import HiddenGems from "./components/hiddenSection";
+import StoriesSection from "./components/storiesSection";
+import Footer from "./components/footerSection";
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <NatureComp />
       <HiddenGems />
       <Treks />
+      <StoriesSection />
+      <Footer />
     </div>
   );
 }

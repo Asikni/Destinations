@@ -67,6 +67,7 @@ function Treks() {
         </div>
       </div>
         <div className="campingSpot">heyy</div>
+        <div className="campingSpot2">heyy</div>
     </div>
   );
 }

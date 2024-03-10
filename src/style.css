@@ -113,15 +113,29 @@
   height: 500px;
 }
 .campingSpot {
-  border: solid 1px red;
-  width: 80%;
-  height: 250px;
-  border-radius: 50%;
-  left: 55px;
-  border-right: none;
-  border-top: none;
+  border: 5px solid #ffa90f;
+  width: 700px;
+  height: 50px;
+  border-radius: 10px;
+  left: 100px;
+  /* border-right: none; */
+  border-left:none;
+  /* border-top: none; */
   border-bottom: none;
   position: absolute;
-  top: 0px;
+
   color: #ffa90f;
+}
+.campingSpot2 {
+  border: 5px solid #ffa90f;
+  width: 700px;
+  height: 49px;
+  border-radius: 10px;
+  bottom:-1680px;
+  left: 100px;
+  border-right: none;
+  /* border-top: none; */
+  /* border-bottom: none; */
+  position: absolute;
+ 
 }
