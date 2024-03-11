@@ -10,63 +10,43 @@ function HiddenGems() {
     >
       <div
         className="hiddenText"
-        style={{ paddingTop: "20px", fontFamily: "Montserrat", position:"absolute", top:"25px" }}
       >
         Discover Hidden Gems
       </div>
       <div className="carousel" >
-        <img
+        <img className="carouselimageone"
           src="Rectangle 200.svg"
           alt="nature image"
-          style={{
-            height: "260px",
-            position:"absolute",
-            bottom:"160px", left:"230px",
-            zIndex: 0
-           
-          }}
+          
         ></img>
         <img
+        className="carouselimagetwo"
           src="shahal-shaheer-nuZ6O19G0mQ-unsplash.jpg"
           alt="nature image"
-          style={{
-            height: "340px",
-            position:"absolute",
-            bottom:"130px", left:"300px",
-            zIndex: 1
-          }}
+
         ></img>
 
         <img
-          className="sonamarg"
+          className="carouselimagethree"
           src="Rectangle 187.svg"
           alt="nature image"
-          style={{ position: "absolute", height: "420px", zIndex: 2, bottom:"100px", left:"400px" }}
+          
         ></img>
 
         <img
+        className="carouselimagefour"
           src="suhail-mir-tdxWb8lcWuU-unsplash (1).jpg"
           alt="nature image"
-          style={{
-            position:"absolute",
-            height: "340px",
-            bottom:"130px", right:"320px",
-            zIndex:1
-          }}
+
         ></img>
         <img
+        className="carouselimagefive"
           src="yogesh-sharma--Zm8OVe6jjM-unsplash.jpg"
           alt="nature image"
-          style={{
-            position:"absolute",
-            height: "260px",
-            bottom:"160px", right:"250px",
-            zIndex:0
-   
-          }}
+
         ></img>
       </div>
-      <div style={{
+      {/* <div style={{
         position:"absolute",
         zIndex:2,
         display:"flex",
@@ -86,25 +66,19 @@ function HiddenGems() {
           <p style={{ paddingLeft:"20px", fontWeight:"500", fontSize:"20px", paddingLeft:"5px"}}>4.2k</p>
           </div>
         </p>
-      </div>
+      </div> */}
       <div
         className="arrows"
-        style={{
-          display: "flex",
-          position:"absolute",
-          bottom:"-10px"
-        }}
       >
         <div
           className="leftarrow"
-          style={{ color: "#FFA90F", width: "150px", fontSize: "70px" }}
         >
           {" "}
           &lt;{" "}
         </div>
         <div
           className="rightarrow"
-          style={{ color: "#FFA90F", fontSize: "70px" }}
+          
         >
           &gt;
         </div>

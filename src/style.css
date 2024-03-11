@@ -131,8 +131,7 @@
   width: 50%;
   height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 50% ;
+  background-position: 0px 50%;
 }
 .hiddenSection {
   display: flex;
@@ -144,34 +143,67 @@
   color: #ffa90f;
   font-size: 50px;
   font-weight: 700;
+  font-family: Montserrat;
+  position: absolute;
+  top: 45px;
 }
-.sonamarg {
+/* .sonamarg {
   height: 500px;
+} */
+
+.carouselimageone {
+  height: 40%;
+  position: absolute;
+  bottom: 160px;
+  left: 230px;
+  z-index: 0;
 }
-/* .campingSpot {
-  border: 3px solid #ffa90f;
-  width: 700px;
-  height: 100px;
-  border-radius: 0px 10px 10px 0px;
-  border-bottom: 300;
-  /* border-right: none; */
-/* border-left: none; */
-/* border-top: none; */
-/* border-bottom: none; */
-/* position: absolute; */
-/* color: #ffa90f; */
-*/
-/* .campingSpot2 {
-  border: 3px solid #ffa90f;
-  width: 500px;
-  height: 100px;
-  border-radius:15px 10px 0px 10px;
-  border-right: none;
-  border-top: none;
-  /* border-bottom: none; */
-  /* position: absolute;
-  margin-top: -6px; */
- */
+
+.carouselimagetwo {
+  height: 50%;
+  position: absolute;
+  bottom: 130px;
+  left: 300px;
+  z-index: 1;
+}
+.carouselimagethree {
+  height: 50%;
+  position: absolute;
+  bottom: 100px;
+  left: 30%;
+  height: 65%;
+  z-index: 2;
+}
+.carouselimagefour {
+  height: 50%;
+  position: absolute;
+  bottom: 130px;
+  right: 320px;
+  z-index: 1;
+}
+
+.carouselimagefive {
+  height: 40%;
+  position: absolute;
+  bottom: 160px;
+  right: 250px;
+  z-index: 0;
+}
+.arrows {
+  display: flex;
+  position: absolute;
+  bottom: -10px;
+}
+.leftarrow {
+  color: #ffa90f;
+  width: 150px;
+  font-size: 70px;
+}
+
+.rightarrow {
+  color: #ffa90f;
+  font-size: 70px;
+}
 
 input[type="text"],
 textarea {
@@ -185,6 +217,7 @@ textarea {
   border-radius: 10px;
   background-color: #ffa90f;
 }
+
 @media only screen and (min-width: 1400px) {
   .top-heading {
     padding-top: 200px;
@@ -207,11 +240,6 @@ textarea {
     width: 230px;
     height: 80px;
   }
-  .natureimage1 {
-    width: 650px;
-    height: auto;
-    background-size: cover;
-  }
 
   .Nature {
     padding: 0px 100px;
@@ -230,9 +258,67 @@ textarea {
     font-size: 25px;
     text-align: justify;
   }
+  .hiddenText {
+    font-size: 80px;
+    top: 70px;
+  }
 
-  .natureimages {
-    width: 50%;
-    height: 100%;
+  .carouselimageone {
+    height: 45%;
+    position: absolute;
+    bottom: 190px;
+    left: 230px;
+    z-index: 0;
+  }
+
+  .carouselimagetwo {
+    height: 55%;
+    position: absolute;
+    bottom: 160px;
+    left: 380px;
+    z-index: 1;
+  }
+  .carouselimagethree {
+    height: 50%;
+    position: absolute;
+    bottom: 130px;
+    left: 30%;
+    height: 65%;
+    z-index: 2;
+  }
+  .carouselimagefour {
+    height: 55%;
+    position: absolute;
+    bottom: 160px;
+    right: 340px;
+    z-index: 1;
+  }
+
+  .carouselimagefive {
+    height: 45%;
+    position: absolute;
+    bottom: 190px;
+    right: 200px;
+    z-index: 0;
+  }
+  .arrows{
+
+    display: flex;
+    position:absolute;
+    bottom:10px
+ 
+}
+  .leftarrow {
+    color: #ffa90f;
+    width: 200px;
+    font-size: 80px;
+    font-family: Montserrat;
+  }
+
+  .rightarrow {
+    color: #ffa90f;
+    font-size: 70px;
+    font-size: 80px;
+    font-family: Montserrat;
   }
 }

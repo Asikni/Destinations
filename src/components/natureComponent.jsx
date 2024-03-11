@@ -11,16 +11,8 @@ function NatureComp() {
     >
       <div
         className="natureimages"
-        // style={{
-        //   border: "1px solid red",
-
-        // }}
       >
-        {/* <img
-          className="natureimage1"
-          src="natureimage1.svg"
-          alt="nature image"
-        ></img> */}
+
       </div>
       <div
         className="NatureDescription"
