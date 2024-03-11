@@ -2,14 +2,14 @@ function Treks() {
   return (
     <div
       className="treks"
-      style={{ height: "100vh", backgroundColor: "#1E2126" }}
+      style={{ height: "150vh", backgroundColor: "#1E2126" }}
     >
       <div
         style={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
-          border: "1px solid green",
+          border: "5px solid green",
           paddingTop: "80px",
         }}
       >
@@ -48,6 +48,8 @@ function Treks() {
           flexDirection: "row",
           justifyContent: "space-evenly",
           color: "#FFFEF5",
+          border:"5px solid white",
+          position:"relative"
         }}
       >
         <div className="difficulty">
@@ -65,9 +67,12 @@ function Treks() {
           <p>Height</p>
           <p>13,715 ft</p>
         </div>
+        <div>
+        <div className="campingSpot" style={{position:"absolute", top:"200px", left:"300px"}}></div>
+        <div className="campingSpot2"style={{position:"absolute", top:"300px", left:"300px"}}></div>
+        </div>
       </div>
-        <div className="campingSpot">heyy</div>
-        <div className="campingSpot2">heyy</div>
+
     </div>
   );
 }
