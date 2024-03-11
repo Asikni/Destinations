@@ -108,12 +108,16 @@
   margin-bottom: 80px;
 }
 
-
 .natureHeading {
   font-weight: bold;
   text-align: center;
-  
 }
+.NatureSectionOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .description {
   width: 550px;
   height: 370px;
@@ -121,6 +125,14 @@
   font-weight: 500;
   font-family: Poppins;
   color: #fffef5;
+}
+.natureimages {
+  background-image: url("../public/natureimage1.svg");
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 50% ;
 }
 .hiddenSection {
   display: flex;
@@ -205,19 +217,22 @@ textarea {
     padding: 0px 100px;
     margin-top: 70px;
     margin-bottom: 80px;
-    
-  
   }
   .natureHeading {
     font-weight: bold;
     text-align: center;
     font-size: 76px;
-    
   }
+
   .description {
-    width: 550px;
+    width: 650px;
     height: 370px;
     font-size: 25px;
-    font-weight: 500;
+    text-align: justify;
+  }
+
+  .natureimages {
+    width: 50%;
+    height: 100%;
   }
 }
