@@ -46,10 +46,11 @@ function Treks() {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-evenly",
+          justifyContent: "space-around",
           color: "#FFFEF5",
-          border:"5px solid white",
-          position:"relative"
+          position:"relative",
+          
+          
         }}
       >
         <div className="difficulty">
@@ -68,8 +69,9 @@ function Treks() {
           <p>13,715 ft</p>
         </div>
         <div>
-        <div className="campingSpot" style={{position:"absolute", top:"200px", left:"300px"}}></div>
-        <div className="campingSpot2"style={{position:"absolute", top:"300px", left:"300px"}}></div>
+        {/* <div className="campingSpot" style={{position:"absolute", top:"200px", left:"300px"}}></div>
+        <div className="campingSpot2"style={{position:"absolute", top:"305px", left:"300px"}}></div> */}
+        <img src="Vector 6.svg" alt="path" style={{position:"absolute",top:"180px", left:"200px" , width:"800px"}} />
         </div>
       </div>
 

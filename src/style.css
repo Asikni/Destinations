@@ -8,7 +8,6 @@
 }
 
 .header {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -27,6 +26,7 @@
   height: 100vh;
 }
 .top-heading {
+  padding-top: 130px;
   font-family: Poppins;
   font-weight: 600;
   font-size: 25px;
@@ -38,8 +38,8 @@
   font-weight: 700;
   font-size: 60px;
   color: #fffef5;
-  padding-top: 35px;
-  padding-bottom: 100px;
+  padding-top: 5px;
+  padding-bottom: 70px;
 }
 .buttonsHeroSection {
   display: flex;
@@ -97,7 +97,31 @@
   font-weight: 700;
   font-size: 76px;
 }
+.natureimage1 {
+  width: 600px;
+  height: 635px;
+  background-size: auto;
+}
+.Nature {
+  padding: 0px 55px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
 
+
+.natureHeading {
+  font-weight: bold;
+  text-align: center;
+  
+}
+.description {
+  width: 550px;
+  height: 370px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #fffef5;
+}
 .hiddenSection {
   display: flex;
   flex-direction: column;
@@ -112,38 +136,35 @@
 .sonamarg {
   height: 500px;
 }
-.campingSpot {
-  border: 5px solid #ffa90f;
+/* .campingSpot {
+  border: 3px solid #ffa90f;
   width: 700px;
   height: 100px;
-  border-radius: 10px;
- 
+  border-radius: 0px 10px 10px 0px;
+  border-bottom: 300;
   /* border-right: none; */
-  border-left:none;
-  /* border-top: none; */
-  /* border-bottom: none; */
-  position: absolute;
-
-  color: #ffa90f;
-}
-.campingSpot2 {
-  border: 5px solid #ffa90f;
+/* border-left: none; */
+/* border-top: none; */
+/* border-bottom: none; */
+/* position: absolute; */
+/* color: #ffa90f; */
+*/
+/* .campingSpot2 {
+  border: 3px solid #ffa90f;
   width: 500px;
   height: 100px;
-  border-radius: 10px;
+  border-radius:15px 10px 0px 10px;
   border-right: none;
   border-top: none;
   /* border-bottom: none; */
-  position: absolute;
- 
-}
+  /* position: absolute;
+  margin-top: -6px; */
+ */
 
-input[type="text"], textarea {
-  
-  background-color : transparent; 
-  border:none
-  
-
+input[type="text"],
+textarea {
+  background-color: transparent;
+  border: none;
 }
 
 .btn-3 {
@@ -151,6 +172,52 @@ input[type="text"], textarea {
   height: 50px;
   border-radius: 10px;
   background-color: #ffa90f;
-
 }
+@media only screen and (min-width: 1400px) {
+  .top-heading {
+    padding-top: 200px;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.54em;
+  }
+  .header {
+    padding-top: 80px;
+  }
+  .main-heading {
+    font-size: 80px;
+    text-align: center;
+  }
+  .btn-1 {
+    width: 230px;
+    height: 80px;
+  }
+  .btn-2 {
+    width: 230px;
+    height: 80px;
+  }
+  .natureimage1 {
+    width: 650px;
+    height: auto;
+    background-size: cover;
+  }
 
+  .Nature {
+    padding: 0px 100px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    
+  
+  }
+  .natureHeading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 76px;
+    
+  }
+  .description {
+    width: 550px;
+    height: 370px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+}

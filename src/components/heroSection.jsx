@@ -9,7 +9,7 @@ function Hero() {
     <div className="hero">
       <Header />
  
-      <div className="top-heading" style={{ paddingTop: "130px" }}>
+      <div className="top-heading" >
         {" "}
         Explore Kashmir's Beauty{" "}
       </div>
@@ -21,7 +21,10 @@ function Hero() {
           &lt;{" "}
         </div>
 
-        <div className="main-heading">Adventure in Paradise</div>
+        <div className="main-heading" style={{fontWeight:"bold"}}>
+          <p>Adventure in</p>
+          <p>Paradise</p>
+        </div>
         <div
           style={{ fontSize: "100px", paddingLeft: "150px", cursor: "pointer",color:"#FFA90F" }}
           onClick={changeImages}

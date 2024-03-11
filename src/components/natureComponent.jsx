@@ -2,13 +2,13 @@ function NatureComp() {
   return (
     <div
       className="NatureSectionOne"
-      style={{ backgroundColor: "#1E2126", height: "100vh" }}
+      style={{ backgroundColor: "#1E2126", height: "100vh", border:"1px solid red" }}
     >
       <div className="natureimage">
         <img
+          className="natureimage1"
           src="natureimage1.svg"
           alt="nature image"
-          style={{ width: "600px", height: "635px", backgroundSize: "auto" }}
         ></img>
       </div>
       <div
@@ -18,31 +18,15 @@ function NatureComp() {
           flexDirection: "column",
           alignItems: "center",
           border: "1px solid green",
-          width: "620px",
-          height: "630px",
+          // width: "620px",
+          // height: "630px",
         }}
       >
-        <div
-          className="Nature"
-          style={{
-            padding: "0px 55px",
-            marginTop: "50px",
-            marginBottom: "80px",
-          }}
-        >
-          Connect With Nature
+        <div className="Nature">
+          <p className="natureHeading">Connect With </p>
+          <p className="natureHeading">Nature</p>
         </div>
-        <div
-          className="description"
-          style={{
-            width: "550px",
-            height: "370px",
-            fontSize: "18px",
-            fontWeight: "500",
-            fontFamily: "Poppins",
-            color: "#FFFEF5",
-          }}
-        >
+        <div className="description">
           Known as Heaven on the Earth, Jammu & Kashmir is where Mother Nature
           has bestowed all her love. Enclosed by the Himalayas and Karakoram
           ranges; and festooned with verdant meadows, lush valleys, dense

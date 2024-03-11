@@ -19,12 +19,11 @@ function StoriesSection() {
       >
         Travel Stories
       </div > 
-     <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around",alignItems:"center"}}>
+     <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around", alignItems:"center"}}>
               
      <div
           className="leftarrow"
           style={{
-            
             fontFamily: "Montserrat",
             fontSize: "100px",
             fontWeight: "300",
