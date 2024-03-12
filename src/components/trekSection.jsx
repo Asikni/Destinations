@@ -4,36 +4,15 @@ function Treks() {
       className="treks"
       style={{ height: "150vh", backgroundColor: "#1E2126" }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          border: "5px solid green",
-          paddingTop: "80px",
-        }}
-      >
-        <div
-          style={{
-            color: "#FFFEF5",
-            fontSize: "180px",
-            border: "1px solid red",
-            marginTop: "-90px",
-            fontFamily: "Montserrat",
-            fontWeight: "700",
-          }}
-        >
-          {" "}
-          7{" "}
-        </div>
-        <div
-          className="topsection"
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <div style={{ color: "#FFA90F" }}>Discover Trek Section in </div>
+      <div className="trektopsection">
+        <div className="number7"> 7 </div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div className="topsectionheadingone" style={{ color: "#FFA90F" }}>
+            Discover Trek Section in{" "}
+          </div>
           <div
-            className="topsectiion lake"
-            style={{ color: "#FFFEF5", fontSize: "50px", marginLeft: "-27px" }}
+            className="topsectiionheading2"
+            style={{ color: "#FFFEF5", marginLeft: "-27px", fontWeight: "500" }}
           >
             {" "}
             Lake Trek
@@ -46,35 +25,52 @@ function Treks() {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-around",
+          justifyContent: "space-evenly",
           color: "#FFFEF5",
-          position:"relative",
-          
-          
+          border: "1px solid pink",
         }}
       >
-        <div className="difficulty">
-          <img></img>
-          <p>Difficulty:</p>
-          <p>Moderate-difficult</p>
+        <div
+          className="difficulty"
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <div className="difficultylogo"></div>
+          <div className="data">Difficulty: Moderate-difficult</div>
         </div>
-        <div className="time">
-          <img></img>
-          <p>Duration:</p>
-          <p>8 days</p>
+        <div className="time" style={{ display: "flex", alignItems: "center" }}>
+          <div className="timelogo"> </div>
+          <div>Duration: 8 days</div>
         </div>
-        <div className="height">
-          <img></img>
-          <p>Height</p>
-          <p>13,715 ft</p>
-        </div>
-        <div>
-        {/* <div className="campingSpot" style={{position:"absolute", top:"200px", left:"300px"}}></div>
-        <div className="campingSpot2"style={{position:"absolute", top:"305px", left:"300px"}}></div> */}
-        <img src="Vector 6.svg" alt="path" style={{position:"absolute",top:"180px", left:"200px" , width:"800px"}} />
+        <div
+          className="height"
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <div className="heightlogo"> </div>
+          <div>Height 13,715 ft</div>
         </div>
       </div>
-
+      <div className="touristDestinations">
+        <div
+          className="dot1"
+          style={{
+            backgroundImage: "url(dots.svg)",
+            width: "5%",
+            height: "10%",
+            backgroundSize: "cover",
+            position: "absolute",
+          }}
+        ></div>
+        <div
+          className="dot2"
+          style={{
+            backgroundImage: "url(dots.svg)",
+            width: "5%",
+            height: "10%",
+            backgroundSize: "cover",
+            position: "absolute",
+          }}
+        ></div>
+      </div>
     </div>
   );
 }

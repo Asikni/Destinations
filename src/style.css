@@ -26,6 +26,7 @@
   height: 100vh;
 }
 .top-heading {
+  border: 1px solid pink;
   padding-top: 130px;
   font-family: Poppins;
   font-weight: 600;
@@ -34,12 +35,12 @@
   letter-spacing: 0.54em;
 }
 .main-heading {
+  border: 1px solid red;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 60px;
   color: #fffef5;
-  padding-top: 5px;
-  padding-bottom: 70px;
+  text-align: center;
 }
 .buttonsHeroSection {
   display: flex;
@@ -47,13 +48,14 @@
   justify-content: center;
   position: relative;
   border: 1px solid red;
+  padding-top: 50px;
   width: 100vw;
 }
 
 .side-heading {
   position: absolute;
   left: 0px;
-  top: 30px;
+  top: 70px;
   rotate: 270deg;
   font-weight: 600;
   font-size: 20px;
@@ -78,7 +80,7 @@
 .logos {
   position: absolute;
   left: 60px;
-  top: -150px;
+  top: -110px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,6 +207,81 @@
   font-size: 70px;
 }
 
+.trektopsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 5px solid green;
+  padding-top: 80px;
+}
+
+.number7 {
+  color: #fffef5;
+  font-size: 180px;
+  border: 1px solid red;
+  margin-top: -90px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.topsectionheadingone {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.topsectiionheading2 {
+  font-size: 50px;
+  font-family: Montserrat;
+}
+
+.difficultylogo {
+  background-image: url("../public/Group.svg");
+  height: 80%;
+  width: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.timelogo {
+  background-image: url("../public/time.svg");
+  height: 80%;
+  width: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.heightlogo {
+  background-image: url("../public/height.svg");
+  height: 80%;
+  width: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.touristDestinations {
+  border: 1px solid hotpink;
+  background-image: url("../public/Vector 6.svg");
+  width: 70%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 200px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.dot1 {
+
+  top:-20px;
+  left:-20px
+}
+
+.dot2 {
+
+  top:-20px;
+  left:400px
+}
+
 input[type="text"],
 textarea {
   background-color: transparent;
@@ -301,13 +378,11 @@ textarea {
     right: 200px;
     z-index: 0;
   }
-  .arrows{
-
+  .arrows {
     display: flex;
-    position:absolute;
-    bottom:10px
- 
-}
+    position: absolute;
+    bottom: 10px;
+  }
   .leftarrow {
     color: #ffa90f;
     width: 200px;
