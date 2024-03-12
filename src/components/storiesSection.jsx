@@ -5,24 +5,17 @@ function StoriesSection() {
   return (
     <div
       className="Stories"
-      style={{ backgroundColor: "#1E2126", height: "100vh" }}
+      style={{ backgroundColor: "#1E2126", height: "100vh", border:"1px dotted cyan" }}
     >
-      <div
-        style={{
-          fontFamily: "Montserrat",
-          fontSize: "60px",
-          fontWeight: "700",
-          color: "#FFA90F",
-          textAlign: "center",
-          paddingTop: "30px",
-        }}
+      <div className="travelStoriesHeading"
+
       >
         Travel Stories
       </div > 
-     <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around", alignItems:"center"}}>
+     <div className="heroTravelSection"style={{display:"flex", flexDirection:"row",  alignItems:"center"}}>
               
      <div
-          className="leftarrow"
+          className="leftArrowTravelSection"
           style={{
             fontFamily: "Montserrat",
             fontSize: "100px",
@@ -45,7 +38,7 @@ function StoriesSection() {
       </div>
 
         <div
-          className="rightarrow"
+          className="rightArrowTravelSection"
           style={{
             fontFamily: "Montserrat",
             fontSize: "100px",
