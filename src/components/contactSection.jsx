@@ -8,18 +8,10 @@ function Contact() {
     event.target.style.border = ""; // Reset border on blur
   };
   return (
-    <div style={{ backgroundColor: "#1E2126", height: "100vh" }}>
+    <div style={{ backgroundColor: "#1E2126", height: "100vh", border:"1px solid yellow" }}>
       <div style={{ position: "relative" }}>
         <div>
-          <img
-            src="Rectangle 16.svg"
-            alt="contact background"
-            style={{
-              width: "800px",
-              marginLeft: "280px",
-        
-            }}
-          />{" "}
+          <div className="contactBgImage"></div>
           <div
             style={{
               position: "absolute",
