@@ -280,7 +280,6 @@
 }
 
 .dot1 {
-  width: 5%;
   height: 10%;
   top: -20px;
   left: -20px;
@@ -290,6 +289,7 @@
   left: -40px;
 }
 .dot2 {
+  height: 10%;
   top: -20px;
   left: 400px;
 }
@@ -306,6 +306,7 @@
 .dot3 {
   top: 100px;
   right: -20px;
+  height: 10%;
 }
 
 .dest03 {
@@ -326,6 +327,7 @@
 .dest04 {
   top: 180px;
   right: 260px;
+  height: 10%;
 }
 
 .destSpotNo04 {
@@ -336,6 +338,7 @@
 .dot5 {
   top: 205px;
   left: 200px;
+  height: 10%;
 }
 
 .dest05 {
@@ -351,6 +354,7 @@
 .dot6 {
   top: 395px;
   left: 330px;
+  height: 10%;
 }
 .dest06 {
   bottom: 0px;
@@ -365,6 +369,7 @@
 .dot7 {
   top: 395px;
   right: 170px;
+  height: 10%;
 }
 .dest07 {
   bottom: 0px;
@@ -421,12 +426,67 @@
 .contactBgImage {
   border: 1px solid red;
   background-image: url("../public/Rectangle 16.svg");
-  width: 100%;
+  width: 65%;
   height: 600px;
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 250px;
-  margin-top: 30px;
+  margin-top: 27px;
+}
+
+.contactTopHeading {
+  position: absolute;
+  top: 50px;
+  left: 450px;
+  color: #ffa90f;
+  font-weight: 700;
+  font-size: 55px;
+  font-family: Montserrat;
+}
+
+.contactHeroHeading {
+  position: absolute;
+  top: 150px;
+  left: 530px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.detailSectionName {
+  position: absolute;
+  top: 300px;
+  left: 330px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.detailSectionMail {
+  position: absolute;
+  top: 300px;
+  left: 750px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.detailSectionPno {
+  position: absolute;
+  top: 400px;
+  left: 330px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.detailSectionMsg {
+  position: absolute;
+  top: 400px;
+  left: 750px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 input[type="text"],
@@ -436,10 +496,70 @@ textarea {
 }
 
 .btn-3 {
-  width: 200px;
-  height: 50px;
+  position: absolute;
+  top: 500px;
+  left: 550px;
+  width: 190px;
+  height: 60px;
   border-radius: 10px;
   background-color: #ffa90f;
+}
+.loadingLogo {
+  position: absolute;
+  bottom: 56px;
+  left: 800px;
+  background-image: url("../public/loader.svg");
+  width: 5%;
+  height: 7%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.approvedLogo {
+  position: absolute;
+  bottom: 56px;
+  left: 880px;
+  background-image: url("../public/approved.svg");
+  width: 5%;
+  height: 7%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contactInfo {
+  border:1px solid white;
+  padding-top: 130px;
+  padding-right: 35px;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.addressHeading {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+
+.addressContent{
+  padding-top: 20px ;text-align: center;
+}
+
+.contactHeading{
+  font-weight: 700; font-size: 25px ;text-align: center
+}
+.contactMail{
+  padding-top: 20px; text-align: center;
+}
+.contactPno{
+  padding-top: 20px; text-align: center
+}
+
+.socialMediaHeading{
+  font-weight: 700 ;font-size: 25px ;text-align: center;
+}
+.socialMediaIcons{
+  padding-top: 20px
 }
 
 @media only screen and (min-width: 1400px) {
@@ -601,7 +721,7 @@ textarea {
   }
 
   .dot1 {
-    height: 12%;
+    height: 13%;
     top: -35px;
     left: -30px;
   }
@@ -611,7 +731,7 @@ textarea {
     font-size: 20px;
   }
   .dot2 {
-    height: 12%;
+    height: 13%;
     top: -35px;
     left: 600px;
   }
@@ -735,5 +855,83 @@ textarea {
 
   .companyWorksFor {
     font-size: 29px;
+  }
+
+  .contactBgImage {
+    width: 60%;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 450px;
+    margin-top: 60px;
+  }
+
+  .contactTopHeading {
+    top: 70px;
+    left: 750px;
+
+    font-size: 60px;
+  }
+
+  .contactHeroHeading {
+    top: 190px;
+    left: 810px;
+
+    font-size: 25px;
+  }
+
+  .detailSectionName {
+    position: absolute;
+    top: 340px;
+    left: 530px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  .detailSectionMail {
+    top: 340px;
+    left: 1050px;
+
+    font-size: 25px;
+  }
+
+  .detailSectionPno {
+    top: 500px;
+    left: 1050px;
+
+    font-size: 25px;
+  }
+
+  .detailSectionMsg {
+    top: 500px;
+    left: 530px;
+
+    font-size: 25px;
+  }
+
+  input[type="text"],
+  textarea {
+    background-color: transparent;
+    border: none;
+  }
+
+  .btn-3 {
+    position: absolute;
+    top: 650px;
+
+    left: 850px;
+    width: 230px;
+    height: 81px;
+    font-size: 21px;
+  }
+  .loadingLogo {
+    bottom: 80px;
+    left: 1150px;
+  }
+
+  .approvedLogo {
+    bottom: 80px;
+    left: 1250px;
   }
 }

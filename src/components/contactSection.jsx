@@ -8,48 +8,22 @@ function Contact() {
     event.target.style.border = ""; // Reset border on blur
   };
   return (
-    <div style={{ backgroundColor: "#1E2126", height: "100vh", border:"1px solid yellow" }}>
+    <div
+      style={{
+        backgroundColor: "#1E2126",
+        height: "100vh",
+        border: "1px solid yellow",
+      }}
+    >
       <div style={{ position: "relative" }}>
         <div>
           <div className="contactBgImage"></div>
-          <div
-            style={{
-              position: "absolute",
-              top: "50px",
-              left: "450px",
-              color: "#FFA90F",
-              fontWeight: "700",
-              fontSize: "55px",
-              fontFamily: "Montserrat",
-            }}
-          >
-            Contact with Us
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              top: "150px",
-              left: "530px",
-              color: "#FFFFFF",
-              fontWeight: "500",
-              fontSize: "20px",
-            }}
-          >
+          <div className="contactTopHeading">Contact with Us</div>
+          <div className="contactHeroHeading">
             Plan your exciting trip with us
           </div>
-          <div>
-            <div
-              style={{
-                position: "absolute",
-                top: "300px",
-                left: "330px",
-                color: "#FFFFFF",
-                fontWeight: "400",
-                fontSize: "20px",
-              }}
-            >
-              Name
-            </div>
+          <div className="cardContent">
+            <div className="detailSectionName">Name</div>
             <form
               className="red-background"
               style={{
@@ -63,18 +37,7 @@ function Contact() {
             >
               <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
             </form>
-            <div
-              style={{
-                position: "absolute",
-                top: "300px",
-                left: "750px",
-                color: "#FFFFFF",
-                fontWeight: "400",
-                fontSize: "20px",
-              }}
-            >
-              E-mail
-            </div>
+            <div className="detailSectionMail">E-mail</div>
             <form
               className="red-background"
               style={{
@@ -88,18 +51,7 @@ function Contact() {
             >
               <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
             </form>
-            <div
-              style={{
-                position: "absolute",
-                top: "400px",
-                left: "330px",
-                color: "#FFFFFF",
-                fontWeight: "400",
-                fontSize: "20px",
-              }}
-            >
-              Phone number
-            </div>
+            <div className="detailSectionPno">Phone number</div>
             <form
               style={{
                 position: "absolute",
@@ -111,16 +63,7 @@ function Contact() {
             >
               <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
             </form>
-            <div
-              style={{
-                position: "absolute",
-                top: "400px",
-                left: "750px",
-                color: "#FFFFFF",
-                fontWeight: "400",
-                fontSize: "20px",
-              }}
-            >
+            <div className="detailSectionMsg" style={{}}>
               Message
             </div>
             <form
@@ -135,38 +78,17 @@ function Contact() {
               <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
             </form>
           </div>
-          <div
-            style={{
-              position: "absolute",
-              top: "500px",
-              left: "550px",
-            }}
-          >
+          
+          <div>
             <Button btnClass={"btn-3"}>Submit</Button>
           </div>
-          
-          <div
-            style={{
-              position: "absolute",
-              top: "500px",
-              left: "800px",
-              
-            }}
-          >
-            <img src="Vector (1).svg" alt="logo" style={{height:"45px",
-              width:"45px"}} />
-          </div>
-          <div style={{
-              position: "absolute",
-              top: "500px",
-              left: "900px",
-            }}>
-            <img src="Vector (2).svg" alt="logo"  style={{height:"45px",
-              width:"45px"}}/>
-          </div>
+
+          <div className="loadingLogo"></div>
+          <div className="approvedLogo"></div>
+        </div>
         </div>
       </div>
-    </div>
+   
   );
 }
 

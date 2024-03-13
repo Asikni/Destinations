@@ -7,47 +7,41 @@ function Footer() {
       <div style={{textAlign:"center", paddingTop:"80px"}}><img src="thirdLogoImage.svg" alt="logo" /></div>
      
       <div
-        className="contactinfo"
-        style={{
-          paddingTop: "130px",
-          paddingRight:"35px",
-          display: "flex",
-          justifyContent: "space-around",
-          
-        }}
+        className="contactInfo"
+
       >
         <div className="address">
-          <p
-            style={{ fontWeight: "700", fontSize: "25px", textAlign: "center" }}
+          <p className="addressHeading"
           >
             Address
           </p>
-          <div style={{ paddingTop: "20px", textAlign: "center" }}>
+          <div className="addressContent" >
             <p>207 & 209 - Saudi Sheikh Complex,</p>
             <p> NH1A, Chanpora, Bypass,</p>
             <p> Srinagar, Jammu & Kashmir, 190015</p>
           </div>
         </div>
         <div className="contact">
-          <p
-            style={{ fontWeight: "700", fontSize: "25px", textAlign: "center" }}
+          <p className="contactHeading"
+           
           >
             Contact
           </p>
-          <p style={{ paddingTop: "20px", textAlign: "center" }}>
+          <p className="contactMail"style={{}}>
             hello@saibbyweb.com
           </p>
-          <p style={{ paddingTop: "20px", textAlign: "center" }}>
+          <p className="contactPno" 
+          >
             +91-8082007711
           </p>
         </div>
-        <div className="socialmedia">
-          <p
-            style={{ fontWeight: "700", fontSize: "25px", textAlign: "center" }}
+        <div className="socialMedia">
+          <p className="socialMediaHeading"
+           
           >
             Follow us on
           </p>
-          <div style={{ paddingTop: "20px" }}>
+          <div className="SocialMediaIcons">
             <img
               src="Social (1).svg"
               alt="social media logo"
