@@ -52,7 +52,19 @@
   padding-top: 50px;
   width: 100vw;
 }
+.leftArrowHero{
+  font-size: 100px;
+  padding-right: 150px;
+  cursor: pointer;
+  color: #FFA90F;
+}
 
+.rightArrowHero{
+  font-size: 100px;
+  padding-left: 150px;
+  cursor: pointer;
+  color:#FFA90F;
+}
 .side-heading {
   position: absolute;
   left: 0px;
@@ -1141,3 +1153,654 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 800px) {
+
+  .hero {
+
+    background-position: 70% 0%;
+  }
+  .top-heading {
+  
+    padding-top: 80px;
+    font-weight: 600;
+    font-size: 12px;
+
+  }
+  .main-heading {
+
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 40px;
+  
+    text-align: center;
+  }
+  .buttonsHeroSection {
+    
+    flex-direction: column;
+    align-items: center;
+ 
+
+    padding-top: 60px;
+
+  }
+  
+  .side-heading {
+  
+    left: -30px;
+    top: 150px;
+
+    font-size: 18px;
+  }
+  
+  .btn-1 {
+    width: 180px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  
+  .btn-2 {
+    width: 180px;
+    height: 60px;
+ 
+    margin-left: 0px;
+  }
+  
+  .logos {
+   
+    left: 20px;
+    top: -20px;
+
+
+  }
+
+  .leftArrowHero{
+    font-size: 70px;
+    padding-right: 10px;
+    align-self: center;
+  }
+  
+  .rightArrowHero{
+    font-size: 70px;
+    padding-left: 10px;
+    align-self: center;
+ 
+  }
+  
+  .NatureSectionOne {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Nature {
+    color: #ffa90f;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 76px;
+  }
+  .natureimage1 {
+    width: 600px;
+    height: 635px;
+    background-size: auto;
+  }
+  .Nature {
+    padding: 0px 55px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  
+  .natureHeading {
+    font-weight: bold;
+    text-align: center;
+  }
+  .NatureSectionOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .description {
+    width: 550px;
+    height: 370px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #fffef5;
+  }
+  .natureimages {
+    background-image: url("../public/natureimage1.svg");
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0px 50%;
+  }
+  .hiddenSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hiddenText {
+    color: #ffa90f;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Montserrat;
+    position: absolute;
+    top: 45px;
+  }
+  /* .sonamarg {
+    height: 500px;
+  } */
+  
+  .carouselimageone {
+    height: 40%;
+    position: absolute;
+    bottom: 160px;
+    left: 230px;
+    z-index: 0;
+  }
+  
+  .carouselimagetwo {
+    height: 50%;
+    position: absolute;
+    bottom: 130px;
+    left: 300px;
+    z-index: 1;
+  }
+  .carouselimagethree {
+    height: 50%;
+    position: absolute;
+    bottom: 100px;
+    left: 30%;
+    height: 65%;
+    z-index: 2;
+  }
+  .carouselimagefour {
+    height: 50%;
+    position: absolute;
+    bottom: 130px;
+    right: 320px;
+    z-index: 1;
+  }
+  
+  .carouselimagefive {
+    height: 40%;
+    position: absolute;
+    bottom: 160px;
+    right: 250px;
+    z-index: 0;
+  }
+  .arrows {
+    display: flex;
+    position: absolute;
+    bottom: -10px;
+  }
+  .leftarrow {
+    color: #ffa90f;
+    width: 150px;
+    font-size: 70px;
+  }
+  
+  .rightarrow {
+    color: #ffa90f;
+    font-size: 70px;
+  }
+  
+  .trektopsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px solid green;
+    padding-top: 80px;
+  }
+  
+  .number7 {
+    color: #fffef5;
+    font-size: 180px;
+    border: 1px solid red;
+    margin-top: -90px;
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+  
+  .topsectionheadingone {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .topsectiionheading2 {
+    font-size: 50px;
+    font-family: Montserrat;
+  }
+  
+  .difficultylogo {
+    background-image: url("../public/Group.svg");
+    height: 80%;
+    width: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .timelogo {
+    background-image: url("../public/time.svg");
+    height: 80%;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .heightlogo {
+    background-image: url("../public/height.svg");
+    height: 80%;
+    width: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .touristDestinations {
+    border: 1px solid hotpink;
+    background-image: url("../public/Vector 6.svg");
+    width: 70%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    margin-top: 100px;
+    position: relative;
+  }
+  
+  .destSpotNo {
+    font-size: 50px;
+  }
+  .destSpotNo01 {
+    top: -60px;
+    left: -70px;
+    position: absolute;
+  }
+  
+  .dot1 {
+    height: 10%;
+    top: -20px;
+    left: -20px;
+  }
+  .dest01 {
+    top: 30px;
+    left: -40px;
+  }
+  .dot2 {
+    height: 10%;
+    top: -20px;
+    left: 400px;
+  }
+  
+  .dest02 {
+    top: -40px;
+    left: 390px;
+  }
+  .destSpotNo02 {
+    top: -90px;
+    left: 460px;
+    position: absolute;
+  }
+  .dot3 {
+    top: 100px;
+    right: -20px;
+    height: 10%;
+  }
+  
+  .dest03 {
+    top: 110px;
+    right: 30px;
+  }
+  
+  .destSpotNo03 {
+    top: 85px;
+    right: -100px;
+    position: absolute;
+  }
+  .dot4 {
+    top: 205px;
+    right: 280px;
+  }
+  
+  .dest04 {
+    top: 180px;
+    right: 260px;
+    height: 10%;
+  }
+  
+  .destSpotNo04 {
+    top: 130px;
+    right: 350px;
+    position: absolute;
+  }
+  .dot5 {
+    top: 205px;
+    left: 200px;
+    height: 10%;
+  }
+  
+  .dest05 {
+    top: 250px;
+    left: 170px;
+  }
+  
+  .destSpotNo05 {
+    top: 250px;
+    left: 280px;
+    position: absolute;
+  }
+  .dot6 {
+    top: 395px;
+    left: 330px;
+    height: 10%;
+  }
+  .dest06 {
+    bottom: 0px;
+    left: 310px;
+  }
+  
+  .destSpotNo06 {
+    bottom: -50px;
+    left: 240px;
+    position: absolute;
+  }
+  .dot7 {
+    top: 395px;
+    right: 170px;
+    height: 10%;
+  }
+  .dest07 {
+    bottom: 0px;
+    right: 150px;
+  }
+  
+  .destSpotNo07 {
+    bottom: 20px;
+    right: 50px;
+    position: absolute;
+  }
+  
+  .travelStoriesHeading {
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffa90f;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .heroTravelSection {
+    justify-content: space-around;
+  }
+  .card {
+    background-color: #3f3d56;
+    width: 550px;
+    height: 330px;
+    margin-top: 100px;
+    border-radius: 11px;
+  }
+  .commentSection {
+    font-size: 19px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 80px 100px 40px 100px;
+    text-align: center;
+  }
+  
+  .commentBy {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffa90f;
+    padding: -10px 100px 10px 100px;
+    text-align: center;
+  }
+  
+  .companyWorksFor {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffa90f;
+    text-align: center;
+  }
+  
+  .contactBgImage {
+    border: 1px solid red;
+    background-image: url("../public/Rectangle 16.svg");
+    width: 65%;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 250px;
+    margin-top: 27px;
+  }
+  
+  .contactTopHeading {
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    color: #ffa90f;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: Montserrat;
+  }
+  
+  .contactHeroHeading {
+    position: absolute;
+    top: 150px;
+    left: 530px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .detailSectionName {
+    position: absolute;
+    top: 250px;
+    left: 330px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .nameField {
+    position: absolute;
+    top: 280px;
+    left: 330px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .nameField input {
+    font-size: 15px;
+  }
+  
+  .lineName {
+    border: 1px solid #ffffff;
+    width: 280px;
+    position: absolute;
+    top: 320px;
+    left: 330px;
+  }
+  
+  .detailSectionMail {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .emailField {
+    position: absolute;
+    top: 280px;
+    left: 700px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .emailField input {
+    font-size: 15px;
+  }
+  .lineMail {
+    border: 1px solid #ffffff;
+    width: 280px;
+    position: absolute;
+    top: 320px;
+    left: 700px;
+  }
+  
+  .detailSectionPno {
+    position: absolute;
+    top: 350px;
+    left: 330px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .numberField {
+    position: absolute;
+    top: 380px;
+    left: 330px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .numberField input {
+    font-size: 15px;
+  }
+  
+  .linePno {
+    border: 1px solid #ffffff;
+    width: 280px;
+    position: absolute;
+    top: 420px;
+    left: 330px;
+  }
+  
+  .detailSectionMsg {
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .messageField {
+    position: absolute;
+    top: 380px;
+    left: 700px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .messageField input {
+    font-size: 15px;
+  }
+  
+  .lineMessage {
+    border: 1px solid #ffffff;
+    width: 280px;
+    position: absolute;
+    top: 420px;
+    left: 700px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  textarea {
+    background-color: transparent;
+    border: none;
+    color: #fffef5;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .btn-3 {
+    position: absolute;
+    top: 500px;
+    left: 550px;
+    width: 190px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #ffa90f;
+  }
+  .loadingLogo {
+    position: absolute;
+    bottom: 56px;
+    left: 800px;
+    background-image: url("../public/loader.svg");
+    width: 5%;
+    height: 7%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .approvedLogo {
+    position: absolute;
+    bottom: 56px;
+    left: 880px;
+    background-image: url("../public/approved.svg");
+    width: 5%;
+    height: 7%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .contactInfo {
+    border: 1px solid white;
+    padding-top: 80px;
+    padding-right: 35px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer {
+    background-image: url("../public/Rectangle 206.svg");
+    background-size: cover;
+    background-position: 0% 90%;
+  }
+  .addressHeading {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .addressContent {
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .contactHeading {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+  }
+  .contactMail {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .contactPno {
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .socialMediaHeading {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+  }
+  .socialMediaIcons {
+    padding-top: 20px;
+  }
+  
+  .ourMessage {
+    color: #ffa90f;
+    padding-top: 80px;
+    text-align: center;
+  }
+  
+}
+

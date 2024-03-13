@@ -4,39 +4,21 @@ import Header from "./header";
 function Hero() {
   const changeImages = () => {};
   return (
-    <div className="hero">
+    <div className="hero" style={{ width: "100vw" }}>
       <Header />
 
       <div className="top-heading"> Explore Kashmir's Beauty </div>
       <div
         className="mainheadingsection"
         style={{ display: "flex", border: "1px solid orange" }}
-      > 
-        <div
-          style={{
-            fontSize: "100px",
-            paddingRight: "150px",
-            cursor: "pointer",
-            color: "#FFA90F",
-          }}
-        >
-          {" "}
-          &lt;{" "}
-        </div>
+      >
+        <div className="leftArrowHero"> &lt; </div>
 
         <div className="main-heading" style={{ fontWeight: "bold" }}>
           <p>Adventure in</p>
           <p>Paradise</p>
         </div>
-        <div
-          style={{
-            fontSize: "100px",
-            paddingLeft: "150px",
-            cursor: "pointer",
-            color: "#FFA90F",
-          }}
-          onClick={changeImages}
-        >
+        <div className="rightArrowHero" onClick={changeImages}>
           {">"}
         </div>
       </div>
