@@ -24,6 +24,7 @@
   align-items: center;
   color: #ffffff;
   height: 100vh;
+  background-position: 0% 20%;
 }
 .top-heading {
   border: 1px solid pink;
@@ -455,46 +456,130 @@
 
 .detailSectionName {
   position: absolute;
-  top: 300px;
+  top: 250px;
   left: 330px;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
+}
+
+.nameField {
+  position: absolute;
+  top: 280px;
+  left: 330px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.nameField input {
+  font-size: 15px;
+}
+
+.lineName {
+  border: 1px solid #ffffff;
+  width: 280px;
+  position: absolute;
+  top: 320px;
+  left: 330px;
 }
 
 .detailSectionMail {
   position: absolute;
-  top: 300px;
-  left: 750px;
+  top: 250px;
+  left: 700px;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
+.emailField {
+  position: absolute;
+  top: 280px;
+  left: 700px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.emailField input {
+  font-size: 15px;
+}
+.lineMail {
+  border: 1px solid #ffffff;
+  width: 280px;
+  position: absolute;
+  top: 320px;
+  left: 700px;
+}
 
 .detailSectionPno {
   position: absolute;
-  top: 400px;
+  top: 350px;
   left: 330px;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
-
-.detailSectionMsg {
+.numberField {
   position: absolute;
-  top: 400px;
-  left: 750px;
-  color: #ffffff;
+  top: 380px;
+  left: 330px;
   font-weight: 400;
   font-size: 20px;
 }
 
+.numberField input {
+  font-size: 15px;
+}
+
+.linePno {
+  border: 1px solid #ffffff;
+  width: 280px;
+  position: absolute;
+  top: 420px;
+  left: 330px;
+}
+
+.detailSectionMsg {
+  position: absolute;
+  top: 350px;
+  left: 700px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+}
+.messageField {
+  position: absolute;
+  top: 380px;
+  left: 700px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.messageField input {
+  font-size: 15px;
+}
+
+.lineMessage {
+  border: 1px solid #ffffff;
+  width: 280px;
+  position: absolute;
+  top: 420px;
+  left: 700px;
+}
+
 input[type="text"],
+input[type="number"],
+input[type="email"],
 textarea {
   background-color: transparent;
   border: none;
+  color: #fffef5;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .btn-3 {
   position: absolute;
   top: 500px;
@@ -527,39 +612,55 @@ textarea {
 }
 
 .contactInfo {
-  border:1px solid white;
-  padding-top: 130px;
+  border: 1px solid white;
+  padding-top: 80px;
   padding-right: 35px;
   display: flex;
   justify-content: space-around;
- 
 }
-
+.footer {
+  background-image: url("../public/Rectangle 206.svg");
+  background-size: cover;
+  background-position: 0% 90%;
+}
 .addressHeading {
   font-weight: 700;
   font-size: 25px;
   text-align: center;
 }
 
-.addressContent{
-  padding-top: 20px ;text-align: center;
+.addressContent {
+  padding-top: 20px;
+  text-align: center;
 }
 
-.contactHeading{
-  font-weight: 700; font-size: 25px ;text-align: center
+.contactHeading {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
 }
-.contactMail{
-  padding-top: 20px; text-align: center;
+.contactMail {
+  padding-top: 20px;
+  text-align: center;
 }
-.contactPno{
-  padding-top: 20px; text-align: center
+.contactPno {
+  padding-top: 20px;
+  text-align: center;
 }
 
-.socialMediaHeading{
-  font-weight: 700 ;font-size: 25px ;text-align: center;
+.socialMediaHeading {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
 }
-.socialMediaIcons{
-  padding-top: 20px
+.socialMediaIcons {
+  padding-top: 20px;
+}
+
+.ourMessage {
+  color: #ffa90f;
+  padding-top: 80px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -571,6 +672,9 @@ textarea {
   }
   .header {
     padding-top: 80px;
+  }
+  .hero{
+    background-position: 0% 20%;
   }
   .main-heading {
     font-size: 80px;
@@ -888,50 +992,152 @@ textarea {
     font-weight: 400;
     font-size: 25px;
   }
+  .nameField {
+    top: 380px;
+    left: 530px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .lineName {
+    width: 400px;
 
+    top: 420px;
+    left: 530px;
+  }
   .detailSectionMail {
     top: 340px;
     left: 1050px;
 
     font-size: 25px;
   }
-
-  .detailSectionPno {
-    top: 500px;
+  .emailField {
+    top: 380px;
     left: 1050px;
-
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 20px;
   }
+  .lineMail {
+    width: 400px;
 
-  .detailSectionMsg {
+    top: 420px;
+    left: 1050px;
+  }
+  .detailSectionPno {
     top: 500px;
     left: 530px;
 
     font-size: 25px;
   }
 
-  input[type="text"],
-  textarea {
-    background-color: transparent;
-    border: none;
+  .numberField {
+    top: 540px;
+    left: 530px;
+    font-weight: 400;
+    font-size: 20px;
   }
+  .linePno {
+    width: 400px;
+
+    top: 580px;
+    left: 530px;
+  }
+  .detailSectionMsg {
+    top: 500px;
+    left: 1050px;
+
+    font-size: 25px;
+  }
+  .messageField {
+    top: 540px;
+    left: 1050px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .lineMessage {
+    width: 400px;
+
+    top: 580px;
+    left: 1050px;
+  }
+
+
+
 
   .btn-3 {
     position: absolute;
-    top: 650px;
+    top: 670px;
 
-    left: 850px;
+    left: 880px;
     width: 230px;
     height: 81px;
     font-size: 21px;
   }
   .loadingLogo {
-    bottom: 80px;
-    left: 1150px;
+    bottom: 70px;
+    left: 1180px;
   }
 
   .approvedLogo {
-    bottom: 80px;
-    left: 1250px;
+    bottom: 70px;
+    left: 1280px;
+  }
+  .contactInfo {
+    margin-top: 140px;
+    padding-top: 0px;
+    padding-bottom: 90px;
+    padding-right: 70px;
+  }
+
+  .footer {
+    
+    background-size: cover;
+    background-position: 0% 90%;
+  }
+
+  .addressHeading {
+    font-weight: 700;
+    font-size: 33px;
+    text-align: center;
+  }
+
+  .addressContent {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .contactHeading {
+    font-weight: 700;
+    font-size: 33px;
+    text-align: center;
+  }
+  .contactMail {
+    padding-top: 23px;
+    text-align: center;
+    font-size: 23px;
+  }
+  .contactPno {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 23px;
+  }
+  .contact{
+    border:1px solid aqua;
+    padding-right: 100px;
+  }
+  .socialMediaHeading {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    font-size: 33px;
+  }
+  .socialMediaIcons {
+    padding-top: 20px;
+  }
+
+  .ourMessage {
+    color: #ffa90f;
+    padding-top: 100px;
+    text-align: center;
   }
 }

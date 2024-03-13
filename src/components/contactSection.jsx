@@ -1,12 +1,7 @@
 import Button from "../buttons";
 
 function Contact() {
-  const myFunction = (event) => {
-    event.target.style.border = "transparent";
-  };
-  const onBlurFunction = (event) => {
-    event.target.style.border = ""; // Reset border on blur
-  };
+
   return (
     <div
       style={{
@@ -24,61 +19,42 @@ function Contact() {
           </div>
           <div className="cardContent">
             <div className="detailSectionName">Name</div>
-            <form
-              className="red-background"
-              style={{
-                position: "absolute",
-                top: "330px",
-                left: "330px",
-                fontWeight: "400",
-                fontSize: "20px",
-                border: "none",
-              }}
-            >
-              <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
+            <form className="nameField">
+              <input
+                type="text"
+                placeholder="Enter Your name"
+                style={{ outline: "none " }}
+              />
             </form>
+            <div className="lineName"></div>
             <div className="detailSectionMail">E-mail</div>
-            <form
-              className="red-background"
-              style={{
-                position: "absolute",
-                top: "330px",
-                left: "750px",
-                fontWeight: "400",
-                fontSize: "20px",
-                border: "none",
-              }}
-            >
-              <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
+            <form className="emailField">
+              <input
+                type="email"
+                placeholder="Enter your e-mail"
+                style={{ outline: "none " }}
+              />
             </form>
+            <div className="lineMail"></div>
             <div className="detailSectionPno">Phone number</div>
-            <form
-              style={{
-                position: "absolute",
-                top: "440px",
-                left: "330px",
-                fontWeight: "400",
-                fontSize: "20px",
-              }}
-            >
-              <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
+            <form className="numberField">
+              <input
+                type="number"
+                placeholder="+91"
+                style={{ outline: "none " }}
+              />
             </form>
-            <div className="detailSectionMsg" style={{}}>
+            <div className="linePno"></div>
+            <div className="detailSectionMsg" >
               Message
             </div>
-            <form
-              style={{
-                position: "absolute",
-                top: "440px",
-                left: "750px",
-                fontWeight: "400",
-                fontSize: "20px",
-              }}
-            >
-              <input type="text" onFocus={myFunction} onBlur={onBlurFunction} />
+
+            <form className="messageField">
+              <input type="text" style={{ outline: "none " }} />
             </form>
+            <div className="lineMessage"></div>
           </div>
-          
+
           <div>
             <Button btnClass={"btn-3"}>Submit</Button>
           </div>
@@ -86,9 +62,8 @@ function Contact() {
           <div className="loadingLogo"></div>
           <div className="approvedLogo"></div>
         </div>
-        </div>
       </div>
-   
+    </div>
   );
 }
 

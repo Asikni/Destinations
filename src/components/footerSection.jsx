@@ -2,9 +2,9 @@ function Footer() {
   return (
     <div
       className="footer"
-      style={{ backgroundImage:"url('Rectangle 206.svg')", color: "#FFFFFF", height: "90vh" }}
+      style={{  color: "#FFFFFF", height: "80vh" }}
     >
-      <div style={{textAlign:"center", paddingTop:"80px"}}><img src="thirdLogoImage.svg" alt="logo" /></div>
+      <div style={{textAlign:"center", paddingTop:"100px", border:'1px solid white'}}><img src="thirdLogoImage.svg" alt="logo" /></div>
      
       <div
         className="contactInfo"
@@ -27,7 +27,7 @@ function Footer() {
           >
             Contact
           </p>
-          <p className="contactMail"style={{}}>
+          <p className="contactMail">
             hello@saibbyweb.com
           </p>
           <p className="contactPno" 
@@ -41,7 +41,7 @@ function Footer() {
           >
             Follow us on
           </p>
-          <div className="SocialMediaIcons">
+          <div className="SocialMediaIcons" style={{border:"1px solid green"}}>
             <img
               src="Social (1).svg"
               alt="social media logo"
@@ -60,8 +60,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div>
-        <p style={{color:"#FFA90F", paddingTop:"80px", textAlign:"center"}}>crafted with 💖 in kashmir</p>
+      <div className="ourMessage">
+        crafted with 💖 in kashmir
       </div>
     </div>
   );
