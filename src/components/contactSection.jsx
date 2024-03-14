@@ -11,7 +11,7 @@ function Contact() {
       }}
     >
       <div style={{ position: "relative" }}>
-        <div>
+        <div >
           <div className="contactBgImage"></div>
           <div className="contactTopHeading">Contact with Us</div>
           <div className="contactHeroHeading">
