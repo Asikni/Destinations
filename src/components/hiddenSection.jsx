@@ -5,45 +5,36 @@ function HiddenGems() {
       style={{
         backgroundColor: "#1E2126",
         height: "100vh",
-        border:" 1px solid white", position:"relative"
+        border: " 1px solid white",
+        position: "relative",
+        width: "100vw",
       }}
     >
-      <div
-        className="hiddenText"
-      >
-        Discover Hidden Gems
-      </div>
-      <div className="carousel" >
-        <img className="carouselimageone"
+      <div className="hiddenText">Discover Hidden Gems</div>
+      <div className="carousel" style={{width:"100vw", height:"100vh"}}>
+        <div className="carouselImageOne"></div>
+
+        {/* <img
+          className="carouselimageone"
           src="Rectangle 200.svg"
           alt="nature image"
-          
-        ></img>
+        ></img> */}
         <img
-        className="carouselimagetwo"
+          className="carouselimagetwo"
           src="shahal-shaheer-nuZ6O19G0mQ-unsplash.jpg"
           alt="nature image"
-
         ></img>
+<div className="carouselImageThree"></div>
 
         <img
-          className="carouselimagethree"
-          src="Rectangle 187.svg"
-          alt="nature image"
-          
-        ></img>
-
-        <img
-        className="carouselimagefour"
+          className="carouselimagefour"
           src="suhail-mir-tdxWb8lcWuU-unsplash (1).jpg"
           alt="nature image"
-
         ></img>
         <img
-        className="carouselimagefive"
+          className="carouselimagefive"
           src="yogesh-sharma--Zm8OVe6jjM-unsplash.jpg"
           alt="nature image"
-
         ></img>
       </div>
       {/* <div style={{
@@ -67,21 +58,9 @@ function HiddenGems() {
           </div>
         </p>
       </div> */}
-      <div
-        className="arrows"
-      >
-        <div
-          className="leftarrow"
-        >
-          {" "}
-          &lt;{" "}
-        </div>
-        <div
-          className="rightarrow"
-          
-        >
-          &gt;
-        </div>
+      <div className="arrows">
+        <div className="leftarrow"> &lt; </div>
+        <div className="rightarrow">&gt;</div>
       </div>
     </div>
   );
