@@ -187,7 +187,7 @@
 /* .sonamarg {
   height: 500px;
 } */
-.carouselImageOne{
+.carouselImageOne {
   background-image: url("../public/Rectangle 200.svg");
   width: 50%;
   height: 40%;
@@ -198,32 +198,21 @@
   bottom: 160px;
   left: 230px;
 }
-/* .carouselimageone {
-  height: 40%;
-  position: absolute;
-  bottom: 160px;
-  left: 230px;
-  z-index: 0;
-} */
 
-.carouselimagetwo {
+.carouselImageTwo {
+  background-image: url("../public/hiddenimagetwo.jpg");
+  width: 50%;
   height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
   position: absolute;
   bottom: 130px;
   left: 300px;
-  z-index: 1;
 }
-/* .carouselimagethree {
-  height: 50%;
-  position: absolute;
-  bottom: 100px;
-  left: 30%;
-  height: 65%;
-  z-index: 2;
-} */
 
 .carouselImageThree {
-  background-image: url("../public/imagethree.svg");
+  background-image: url("../public/hiddenimagethree.svg");
   width: 60%;
   height: 60%;
   background-size: contain;
@@ -232,23 +221,31 @@
   position: absolute;
   bottom: 100px;
   left: 30%;
-  
 }
-.carouselimagefour {
+.carouselImageFour {
+  background-image: url("../public/hiddenimagefour.jpg");
+  width: 50%;
   height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
   position: absolute;
   bottom: 130px;
-  right: 320px;
-  z-index: 1;
+  right: 130px;
 }
 
-.carouselimagefive {
+.carouselImageFive {
+  background-image: url("../public/hiddenimagefive.jpg");
+  width: 50%;
   height: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
   position: absolute;
   bottom: 160px;
-  right: 250px;
-  z-index: 0;
+  right: -60px;
 }
+
 .arrows {
   display: flex;
   position: absolute;
@@ -291,7 +288,21 @@
   font-size: 50px;
   font-family: Montserrat;
 }
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
+  color: #fffef5;
+  border: 1px solid pink;
+}
+.firstTwoFeatures {
+  display: flex;
+}
+
+.difficulty {
+  margin-right: 300px;
+}
 .difficultylogo {
   background-image: url("../public/Group.svg");
   height: 80%;
@@ -310,10 +321,11 @@
 
 .heightlogo {
   background-image: url("../public/height.svg");
-  height: 80%;
+  height: 70%;
   width: 40%;
   background-size: contain;
   background-repeat: no-repeat;
+  align-self: center;
 }
 
 .touristDestinations {
@@ -784,45 +796,65 @@ input::-webkit-inner-spin-button {
     font-size: 80px;
     top: 70px;
   }
-
-  .carouselimageone {
-    height: 45%;
+  .carouselImageOne {
+    background-image: url("../public/Rectangle 200.svg");
+    width: 50%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
     position: absolute;
     bottom: 190px;
     left: 230px;
-    z-index: 0;
   }
 
-  .carouselimagetwo {
-    height: 55%;
+  .carouselImageTwo {
+    background-image: url("../public/hiddenimagetwo.jpg");
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
     position: absolute;
     bottom: 160px;
     left: 380px;
-    z-index: 1;
   }
-  .carouselimagethree {
-    height: 50%;
+
+  .carouselImageThree {
+    background-image: url("../public/hiddenimagethree.svg");
+    width: 60%;
+    height: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
     position: absolute;
     bottom: 130px;
     left: 30%;
-    height: 65%;
-    z-index: 2;
   }
-  .carouselimagefour {
-    height: 55%;
+  .carouselImageFour {
+    background-image: url("../public/hiddenimagefour.jpg");
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
     position: absolute;
     bottom: 160px;
-    right: 340px;
-    z-index: 1;
+    right: 140px;
   }
 
-  .carouselimagefive {
-    height: 45%;
+  .carouselImageFive {
+    background-image: url("../public/hiddenimagefive.jpg");
+    width: 50%;
+    height: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
     position: absolute;
     bottom: 190px;
-    right: 200px;
-    z-index: 0;
+    right: -190px;
   }
+
   .arrows {
     display: flex;
     position: absolute;
@@ -866,6 +898,10 @@ input::-webkit-inner-spin-button {
 
   .features {
     padding: 80px 0px 50px 0px;
+  }
+
+  .difficulty {
+    margin-right: 400px;
   }
   .difficultyDetails,
   .heightDetails,
@@ -1336,131 +1372,147 @@ input::-webkit-inner-spin-button {
     height: 500px;
   } */
 
-  .carouselimageone {
-    height: 20%;
-    position: absolute;
-    bottom: 160px;
-    left: 230px;
-    z-index: 0;
-  }
-
-  .carouselimagetwo {
-    height: 50%;
-    position: absolute;
-    bottom: 130px;
-    left: 300px;
-    z-index: 1;
-  }
-  .carouselimagethree {
-    position: absolute;
-    /* bottom: 30vh; */
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-
+  .carouselImageOne {
+    /* background-image: url("../public/Rectangle 200.svg");
+    width: 50%;
+    height: 40%;
     background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: absolute;
+    bottom: 190px;
+    left: 230px; */
+    display: none;
+  }
+
+  .carouselImageTwo {
+    width: 50%;
+    height: 25%;
+    background-size: contain;
+
+    bottom: 280px;
+    left: 0px;
   }
 
   .carouselImageThree {
-   
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .carouselimagefour {
+    width: 80%;
     height: 50%;
-    position: absolute;
+    background-size: contain;
     bottom: 130px;
-    right: 320px;
-    z-index: 1;
+    left: 10%;
+  }
+  .carouselImageFour {
+    width: 80%;
+    height: 25%;
+    background-size: contain;
+    bottom: 280px;
+    right: -33px;
   }
 
-  .carouselimagefive {
+  .carouselImageFive {
+    /* background-image: url("../public/hiddenimagefive.jpg");
+    width: 50%;
     height: 40%;
-    position: absolute;
-    bottom: 160px;
-    right: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 0;
+    position: absolute;
+    bottom: 190px;
+    right: -190px; */
+    display: none;
   }
   .arrows {
-    display: flex;
-    position: absolute;
-    bottom: -10px;
+    bottom: 10px;
   }
   .leftarrow {
-    color: #ffa90f;
-    width: 150px;
-    font-size: 70px;
+    font-family: monospace;
   }
 
   .rightarrow {
-    color: #ffa90f;
-    font-size: 70px;
+    font-family: monospace;
   }
 
   .trektopsection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 5px solid green;
-    padding-top: 80px;
+    padding-top: 100px;
   }
 
   .number7 {
-    color: #fffef5;
-    font-size: 180px;
-    border: 1px solid red;
-    margin-top: -90px;
-    font-family: Montserrat;
-    font-weight: 700;
-  }
+    font-size: 140px;
 
+    margin-top: -75px;
+  }
+  .topHeadingTrekSection {
+    padding-top: 0px;
+    margin-left: 0px;
+  }
   .topsectionheadingone {
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .topsectiionheading2 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: Montserrat;
+    padding-left: 10px;
   }
 
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .firstTwoFeatures {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .difficulty {
+    margin-right: 13px;
+  }
+  .difficultyDetails {
+    font-size: 15px;
+  }
+  .height {
+    margin-top: 20px;
+  }
+  .heightDetails {
+    font-size: 15px;
+  }
+  .timeDuration {
+    font-size: 15px;
+  }
+  .difficultyDetails span,
+  .heightDetails span,
+  .timeDuration span {
+    color: #ffa90f;
+  }
   .difficultylogo {
-    background-image: url("../public/Group.svg");
-    height: 80%;
-    width: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 40px;
+    padding-left: 0px;
   }
 
   .timelogo {
     background-image: url("../public/time.svg");
-    height: 80%;
-    width: 90%;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    padding-left: 15px;
   }
 
   .heightlogo {
-    background-image: url("../public/height.svg");
-    height: 80%;
-    width: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
   }
 
   .touristDestinations {
-    border: 1px solid hotpink;
-    background-image: url("../public/Vector 6.svg");
-    width: 70%;
+    width: 90%;
     height: 50%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 200px;
-    margin-top: 100px;
+    margin-left: 20px;
+    margin-top: 120px;
     position: relative;
+    background-position: center;
   }
 
   .destSpotNo {
@@ -1576,20 +1628,16 @@ input::-webkit-inner-spin-button {
   }
 
   .travelStoriesHeading {
-    font-family: Montserrat;
-    font-size: 60px;
-    font-weight: 700;
-    color: #ffa90f;
-    text-align: center;
-    padding-top: 10px;
+    font-size: 45px;
+    padding-top: 20px;
   }
   .heroTravelSection {
     justify-content: space-around;
   }
   .card {
     background-color: #3f3d56;
-    width: 550px;
-    height: 330px;
+    width: 90%;
+    height: 50%;
     margin-top: 100px;
     border-radius: 11px;
   }

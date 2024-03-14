@@ -11,31 +11,12 @@ function HiddenGems() {
       }}
     >
       <div className="hiddenText">Discover Hidden Gems</div>
-      <div className="carousel" style={{width:"100vw", height:"100vh"}}>
+      <div className="carousel" style={{ width: "100vw", height: "100vh" }}>
         <div className="carouselImageOne"></div>
-
-        {/* <img
-          className="carouselimageone"
-          src="Rectangle 200.svg"
-          alt="nature image"
-        ></img> */}
-        <img
-          className="carouselimagetwo"
-          src="shahal-shaheer-nuZ6O19G0mQ-unsplash.jpg"
-          alt="nature image"
-        ></img>
-<div className="carouselImageThree"></div>
-
-        <img
-          className="carouselimagefour"
-          src="suhail-mir-tdxWb8lcWuU-unsplash (1).jpg"
-          alt="nature image"
-        ></img>
-        <img
-          className="carouselimagefive"
-          src="yogesh-sharma--Zm8OVe6jjM-unsplash.jpg"
-          alt="nature image"
-        ></img>
+        <div className="carouselImageTwo"></div>
+        <div className="carouselImageThree"></div>
+        <div className="carouselImageFour"></div>
+        <div className="carouselImageFive"></div>
       </div>
       {/* <div style={{
         position:"absolute",

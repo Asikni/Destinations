@@ -2,7 +2,7 @@ function Treks() {
   return (
     <div
       className="treks"
-      style={{ height: "150vh", backgroundColor: "#1E2126" }}
+      style={{ height: "150vh", width: "100vw", backgroundColor: "#1E2126" }}
     >
       <div className="trektopsection">
         <div className="number7"> 7 </div>
@@ -27,40 +27,38 @@ function Treks() {
         </div>
       </div>
 
-      <div
-        className="features"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          color: "#FFFEF5",
-          border: "1px solid pink",
-        }}
-      >
+      <div className="features">
+        <div className="firstTwoFeatures">
         <div
           className="difficulty"
-          style={{ display: "flex", alignItems: "center" }}
+          style={{ display: "flex", alignItems: "center"}}
         >
+          
           <div className="difficultylogo"></div>
-          <div className="difficultyDetails">
+          <div
+            className="difficultyDetails"
+            
+          >
             Difficulty: <span>Moderate-difficult</span>
           </div>
         </div>
         <div className="time" style={{ display: "flex", alignItems: "center" }}>
           <div className="timelogo"> </div>
-          <div className="timeDuration">Duration: <span> 8 days</span></div>
+          <div className="timeDuration" >
+            Duration: <span> 8 days</span>
+          </div>
         </div>
-        <div
-          className="height"
-          style={{ display: "flex", alignItems: "center" }}
-        >
+        </div>
+        <div className="height" style={{ display: "flex" }}>
           <div className="heightlogo"> </div>
-          <div className="heightDetails">Height <span>13,715 ft</span></div>
+          <div className="heightDetails" >
+            Height <span>13,715 ft</span>
+          </div>
         </div>
       </div>
 
       <div className="touristDestinations">
-        <div className="destSpotNo" >
+        <div className="destSpotNo">
           <div
             className="destSpotNo01"
             style={{
@@ -167,7 +165,7 @@ function Treks() {
           style={{
             backgroundImage: "url(dots.svg)",
             width: "5%",
-      
+
             backgroundSize: "cover",
             position: "absolute",
           }}
@@ -184,7 +182,7 @@ function Treks() {
           style={{
             backgroundImage: "url(dots.svg)",
             width: "5%",
-          
+
             backgroundSize: "cover",
             position: "absolute",
           }}
@@ -201,7 +199,7 @@ function Treks() {
           style={{
             backgroundImage: "url(dots.svg)",
             width: "5%",
-          
+
             backgroundSize: "cover",
             position: "absolute",
           }}
@@ -218,7 +216,7 @@ function Treks() {
           style={{
             backgroundImage: "url(dots.svg)",
             width: "5%",
-           
+
             backgroundSize: "cover",
             position: "absolute",
           }}
@@ -236,7 +234,7 @@ function Treks() {
           style={{
             backgroundImage: "url(dots.svg)",
             width: "5%",
-           
+
             backgroundSize: "cover",
             position: "absolute",
           }}
@@ -254,7 +252,7 @@ function Treks() {
           style={{
             backgroundImage: "url(dots.svg)",
             width: "5%",
-    
+
             backgroundSize: "cover",
             position: "absolute",
           }}
