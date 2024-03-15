@@ -2,9 +2,9 @@ function Footer() {
   return (
     <div
       className="footer"
-      style={{  color: "#FFFFFF", height: "80vh" }}
+      style={{  color: "#FFFFFF", height: "80vh", width:"100vw" }}
     >
-      <div style={{textAlign:"center", paddingTop:"100px", border:'1px solid white'}}><img src="thirdLogoImage.svg" alt="logo" /></div>
+      <div className="footerTravelLogo" style={{}}><img src="thirdLogoImage.svg" alt="logo" /></div>
      
       <div
         className="contactInfo"
@@ -41,22 +41,25 @@ function Footer() {
           >
             Follow us on
           </p>
-          <div className="SocialMediaIcons" style={{border:"1px solid green"}}>
-            <img
+          <div className="socialMediaIcons" >
+            <div className="socialMediaLogoOne"></div>
+            <div className="socialMediaLogoTwo"></div>
+            <div className="socialMediaLogoThree"></div>
+            {/* <img
               src="Social (1).svg"
               alt="social media logo"
               style={{ width: "80px", height: "80px" }}
-            />
-            <img
+            /> */}
+            {/* <img
               src="Social (2).svg"
               alt="social media logo"
               style={{ width: "80px", height: "80px" }}
-            />
-            <img
+            /> */}
+            {/* <img
               src="Social (3).svg"
               alt="social media logo"
               style={{ width: "80px", height: "80px" }}
-            />
+            /> */}
           </div>
         </div>
       </div>

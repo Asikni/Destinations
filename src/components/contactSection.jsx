@@ -7,7 +7,8 @@ function Contact() {
       style={{
         backgroundColor: "#1E2126",
         height: "100vh",
-        border: "1px solid yellow",
+      
+        width: "100vw"
       }}
     >
       <div style={{ position: "relative" }}>

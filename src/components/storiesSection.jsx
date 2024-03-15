@@ -5,7 +5,7 @@ function StoriesSection() {
   return (
     <div
       className="Stories"
-      style={{ backgroundColor: "#1E2126", height: "100vh" }}
+      style={{ backgroundColor: "#1E2126", height: "100vh", width:'100vw' }}
     >
       <div className="travelStoriesHeading">Travel Stories</div>
       <div

@@ -10,7 +10,7 @@ function Hero() {
       <div className="top-heading"> Explore Kashmir's Beauty </div>
       <div
         className="mainheadingsection"
-        style={{ display: "flex", border: "1px solid orange" }}
+        style={{ display: "flex" }}
       >
         <div className="leftArrowHero"> &lt; </div>
 

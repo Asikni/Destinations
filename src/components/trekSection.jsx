@@ -11,7 +11,7 @@ function Treks() {
           style={{
             display: "flex",
             flexDirection: "column",
-            border: "1px solid grey",
+            
           }}
         >
           <div className="topsectionheadingone" style={{ color: "#FFA90F" }}>

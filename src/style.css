@@ -5,6 +5,7 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
+
 }
 
 .header {
@@ -52,7 +53,6 @@
   background-position: 0% 10%;
 }
 .top-heading {
-  border: 1px solid pink;
   padding-top: 130px;
   font-family: Poppins;
   font-weight: 600;
@@ -61,7 +61,6 @@
   letter-spacing: 0.54em;
 }
 .main-heading {
-  border: 1px solid red;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 60px;
@@ -73,7 +72,7 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  border: 1px solid red;
+
   padding-top: 50px;
   width: 100vw;
 }
@@ -236,14 +235,14 @@
 
 .carouselImageFive {
   background-image: url("../public/hiddenimagefive.jpg");
-  width: 50%;
+  width: 25%;
   height: 40%;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
   position: absolute;
   bottom: 160px;
-  right: -60px;
+  right: 275px;
 }
 
 .arrows {
@@ -266,14 +265,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 5px solid green;
+
   padding-top: 80px;
 }
 
 .number7 {
   color: #fffef5;
   font-size: 180px;
-  border: 1px solid red;
+
   margin-top: -90px;
   font-family: Montserrat;
   font-weight: 700;
@@ -294,7 +293,6 @@
   justify-content: space-around;
 
   color: #fffef5;
-  border: 1px solid pink;
 }
 .firstTwoFeatures {
   display: flex;
@@ -329,7 +327,6 @@
 }
 
 .touristDestinations {
-  border: 1px solid hotpink;
   background-image: url("../public/Vector 6.svg");
   width: 70%;
   height: 50%;
@@ -510,14 +507,12 @@
 }
 
 .contactBgImage {
-  border: 1px solid red;
   background-image: url("../public/Rectangle 16.svg");
   width: 65%;
   height: 600px;
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 250px;
-  margin-top: 27px;
 }
 
 .contactTopHeading {
@@ -695,9 +690,11 @@ input::-webkit-inner-spin-button {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
+.footerTravelLogo {
+  text-align: center;
+  padding-top: 100px;
+}
 .contactInfo {
-  border: 1px solid white;
   padding-top: 80px;
   padding-right: 35px;
   display: flex;
@@ -739,7 +736,25 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 .socialMediaIcons {
-  padding-top: 20px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialMediaLogoOne {
+  background-image: url("../public/Social (1).svg");
+  width: 90px;
+  height: 80px;
+}
+.socialMediaLogoTwo {
+  background-image: url("../public/Social (2).svg");
+  width: 90px;
+  height: 80px;
+}
+.socialMediaLogoThree {
+  background-image: url("../public/Social (3).svg");
+  width: 90px;
+  height: 80px;
 }
 
 .ourMessage {
@@ -861,14 +876,14 @@ input::-webkit-inner-spin-button {
 
   .carouselImageFive {
     background-image: url("../public/hiddenimagefive.jpg");
-    width: 50%;
+    width: 30%;
     height: 40%;
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
     position: absolute;
     bottom: 190px;
-    right: -190px;
+    right: 190px;
   }
 
   .arrows {
@@ -1250,7 +1265,6 @@ input::-webkit-inner-spin-button {
     font-size: 23px;
   }
   .contact {
-    border: 1px solid aqua;
     padding-right: 100px;
   }
   .socialMediaHeading {
@@ -1379,7 +1393,7 @@ input::-webkit-inner-spin-button {
     padding-top: 80px;
   }
   .natureimages {
-    width: 103%;
+    width: 100%;
     height: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1424,11 +1438,11 @@ input::-webkit-inner-spin-button {
     left: 10%;
   }
   .carouselImageFour {
-    width: 80%;
+    width: 70%;
     height: 25%;
     background-size: contain;
     bottom: 280px;
-    right: -33px;
+    right: 0px;
   }
 
   .carouselImageFive {
@@ -1690,143 +1704,127 @@ input::-webkit-inner-spin-button {
   .contactBgImage {
     background-image: url("../public/final2.jpg");
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 0px;
     margin-top: 0px;
-    border-radius: 25px;
+    border-radius: 0px;
   }
 
   .contactTopHeading {
     position: absolute;
-    top: 50px;
-    left: 450px;
-    color: #ffa90f;
-    font-weight: 700;
-    font-size: 55px;
-    font-family: Montserrat;
-  }
 
+    top: 20px;
+    left: 55px;
+
+    font-size: 30px;
+  }
   .contactHeroHeading {
-    position: absolute;
-    top: 150px;
-    left: 530px;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 20px;
+    top: 80px;
+    left: 70px;
+
+    font-size: 15px;
   }
 
   .detailSectionName {
-    position: absolute;
-    top: 250px;
-    left: 330px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 20px;
+    top: 160px;
+    left: 30px;
+
+    font-size: 16px;
   }
 
   .nameField {
-    position: absolute;
-    top: 280px;
-    left: 330px;
-    font-weight: 400;
-    font-size: 20px;
+    top: 190px;
+    left: 30px;
+
+    font-size: 16px;
   }
 
   .nameField input {
-    font-size: 15px;
+    font-size: 13px;
+    width: 130px;
   }
 
   .lineName {
-    border: 1px solid #ffffff;
-    width: 280px;
-    position: absolute;
-    top: 320px;
-    left: 330px;
+    width: 130px;
+
+    top: 220px;
+    left: 30px;
   }
 
   .detailSectionMail {
-    position: absolute;
-    top: 250px;
-    left: 700px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 20px;
+    top: 160px;
+    left: 200px;
+    font-size: 16px;
   }
   .emailField {
     position: absolute;
-    top: 280px;
-    left: 700px;
-    font-weight: 400;
-    font-size: 20px;
+    top: 190px;
+    left: 200px;
+
+    font-size: 16px;
   }
 
   .emailField input {
-    font-size: 15px;
+    font-size: 12px;
+    width: 130px;
   }
   .lineMail {
-    border: 1px solid #ffffff;
-    width: 280px;
-    position: absolute;
-    top: 320px;
-    left: 700px;
+    width: 130px;
+
+    top: 220px;
+    left: 200px;
   }
 
   .detailSectionPno {
-    position: absolute;
-    top: 350px;
-    left: 330px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 20px;
+    top: 260px;
+    left: 30px;
+
+    font-size: 16px;
   }
   .numberField {
-    position: absolute;
-    top: 380px;
-    left: 330px;
-    font-weight: 400;
-    font-size: 20px;
+    top: 290px;
+    left: 30px;
+
+    font-size: 16px;
   }
 
   .numberField input {
-    font-size: 15px;
+    font-size: 12px;
+    width: 130px;
   }
 
   .linePno {
-    border: 1px solid #ffffff;
-    width: 280px;
-    position: absolute;
-    top: 420px;
-    left: 330px;
+    width: 130px;
+
+    top: 320px;
+    left: 30px;
   }
 
   .detailSectionMsg {
-    position: absolute;
-    top: 350px;
-    left: 700px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 20px;
+    top: 260px;
+    left: 200px;
+
+    font-size: 16px;
   }
   .messageField {
-    position: absolute;
-    top: 380px;
-    left: 700px;
-    font-weight: 400;
-    font-size: 20px;
+    top: 290px;
+    left: 200px;
+
+    font-size: 16px;
   }
 
   .messageField input {
-    font-size: 15px;
+    font-size: 12px;
+    width: 130px;
   }
 
   .lineMessage {
-    border: 1px solid #ffffff;
-    width: 280px;
-    position: absolute;
-    top: 420px;
-    left: 700px;
+    width: 130px;
+
+    top: 320px;
+    left: 200px;
   }
 
   input[type="text"],
@@ -1845,10 +1843,10 @@ input::-webkit-inner-spin-button {
   }
   .btn-3 {
     position: absolute;
-    top: 500px;
-    left: 550px;
-    width: 190px;
-    height: 60px;
+    top: 400px;
+    left: 110px;
+    width: 150px;
+    height: 45px;
     border-radius: 10px;
     background-color: #ffa90f;
   }
@@ -1861,6 +1859,7 @@ input::-webkit-inner-spin-button {
     height: 7%;
     background-size: contain;
     background-repeat: no-repeat;
+    display: none;
   }
 
   .approvedLogo {
@@ -1872,57 +1871,67 @@ input::-webkit-inner-spin-button {
     height: 7%;
     background-size: contain;
     background-repeat: no-repeat;
+    display: none;
+  }
+
+  .footerTravelLogo {
+    text-align: center;
+    padding-top: 0px;
   }
 
   .contactInfo {
-    border: 1px solid white;
-    padding-top: 80px;
-    padding-right: 35px;
+    padding-top: 20px;
+    padding-right: 0px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
   }
   .footer {
     background-image: url("../public/Rectangle 206.svg");
     background-size: cover;
-    background-position: 0% 90%;
+    background-position: 50% 0%;
   }
   .addressHeading {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
 
   .addressContent {
     padding-top: 20px;
     text-align: center;
+    font-size: 15px;
   }
 
   .contactHeading {
+    padding-top: 10px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   .contactMail {
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
   }
   .contactPno {
-    padding-top: 20px;
+    padding-top: 8px;
     text-align: center;
   }
 
   .socialMediaHeading {
+    padding-top: 10px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   .socialMediaIcons {
-    padding-top: 20px;
+    padding-top: 10px;
+
+    justify-content: center;
   }
 
   .ourMessage {
     color: #ffa90f;
-    padding-top: 80px;
+    padding-top: 60px;
     text-align: center;
   }
 }

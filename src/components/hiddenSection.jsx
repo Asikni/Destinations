@@ -5,7 +5,7 @@ function HiddenGems() {
       style={{
         backgroundColor: "#1E2126",
         height: "100vh",
-        border: " 1px solid white",
+       
         position: "relative",
         width: "100vw",
       }}
