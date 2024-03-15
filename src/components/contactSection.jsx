@@ -7,7 +7,7 @@ function Contact() {
       style={{
         backgroundColor: "#1E2126",
         height: "100vh",
-      
+
         width: "100vw"
       }}
     >

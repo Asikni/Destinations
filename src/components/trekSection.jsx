@@ -45,7 +45,8 @@ function Treks() {
         <div className="time" style={{ display: "flex", alignItems: "center" }}>
           <div className="timelogo"> </div>
           <div className="timeDuration" >
-            Duration: <span> 8 days</span>
+            Duration: 
+            <div><span> 8 days</span></div>
           </div>
         </div>
         </div>
@@ -56,8 +57,9 @@ function Treks() {
           </div>
         </div>
       </div>
-
+      <div className="toBeRemoved"></div>
       <div className="touristDestinations">
+        <div className="toBeRemoved">1</div>
         <div className="destSpotNo">
           <div
             className="destSpotNo01"

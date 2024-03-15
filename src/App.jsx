@@ -7,7 +7,6 @@ import StoriesSection from "./components/storiesSection";
 import Contact from "./components/contactSection";
 import Footer from "./components/footerSection";
 
-
 function App() {
   return (
     <div>
