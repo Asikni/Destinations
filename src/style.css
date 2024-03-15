@@ -750,7 +750,7 @@ input::-webkit-inner-spin-button {
 .socialMediaLogoTwo {
   background-image: url("../public/Social (2).svg");
   width: 90px;
-  height: 80px;
+  height: 90px;
 }
 .socialMediaLogoThree {
   background-image: url("../public/Social (3).svg");
@@ -1840,8 +1840,10 @@ input::-webkit-inner-spin-button {
   }
   @media only screen and (width: 375px) {
     .carouselImageFour {
+      width: 65%;
+
       bottom: 38%;
-      right: -20px;
+      right: -2px;
     }
 
     .carouselImageTwo {
@@ -1920,6 +1922,5 @@ input::-webkit-inner-spin-button {
       height: 100vh;
       background-position: 80% 0%;
     }
-
   }
 }
