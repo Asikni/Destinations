@@ -2,7 +2,7 @@ function Treks() {
   return (
     <div
       className="treks"
-      style={{ height: "150vh", width: "100vw", backgroundColor: "#1E2126" }}
+      style={{ height: "150vh",  backgroundColor: "#1E2126" }}
     >
       <div className="trektopsection">
         <div className="number7"> 7 </div>

@@ -5,6 +5,9 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
+  border: 1px solid red;
+
+  
 }
 
 .header {
@@ -12,7 +15,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 100vw;
+  width: 98vw;
   padding-top: 30px;
 }
 .summerLogo {
@@ -73,11 +76,11 @@
   position: relative;
 
   padding-top: 50px;
-  width: 100vw;
+  width: 98vw;
 }
 .leftArrowHero {
   font-size: 100px;
-  padding-right: 150px;
+  padding-right: 300px;
   cursor: pointer;
   color: #ffa90f;
   font-family: monospace;
@@ -85,7 +88,7 @@
 
 .rightArrowHero {
   font-size: 100px;
-  padding-left: 150px;
+  padding-left: 300px;
   cursor: pointer;
   color: #ffa90f;
   font-family: monospace;
@@ -156,12 +159,11 @@
 }
 .description {
   width: 550px;
-  height: 370px;
+  height: 350px;
   font-size: 18px;
   font-weight: 500;
-  font-family: Poppins;
+  text-align: justify;
   color: #fffef5;
-  /* padding-left: 60px; */
 }
 .natureimages {
   background-image: url("../public/natureimage1.svg");
@@ -213,7 +215,7 @@
 
 .carouselImageThree {
   background-image: url("../public/hiddenimagethree.svg");
-  width: 60%;
+  width: 37%;
   height: 60%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -249,7 +251,7 @@
 .arrows {
   display: flex;
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
 }
 .leftarrow {
   color: #ffa90f;
@@ -509,11 +511,12 @@
 
 .contactBgImage {
   background-image: url("../public/Rectangle 16.svg");
-  width: 65%;
-  height: 600px;
+  width: 62%;
+  height: 95vh;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contactTopHeading {
@@ -672,7 +675,7 @@ input::-webkit-inner-spin-button {
 }
 .loadingLogo {
   position: absolute;
-  bottom: 56px;
+  bottom: 65px;
   left: 800px;
   background-image: url("../public/loader.svg");
   width: 5%;
@@ -683,7 +686,7 @@ input::-webkit-inner-spin-button {
 
 .approvedLogo {
   position: absolute;
-  bottom: 56px;
+  bottom: 65px;
   left: 880px;
   background-image: url("../public/approved.svg");
   width: 5%;
@@ -703,6 +706,7 @@ input::-webkit-inner-spin-button {
 }
 .footer {
   background-image: url("../public/Rectangle 206.svg");
+
   background-size: cover;
   background-position: 0% 90%;
 }
@@ -1055,7 +1059,7 @@ input::-webkit-inner-spin-button {
   }
 
   .destSpotNo06 {
-    bottom: -110px;
+    bottom: -85px;
     left: 420px;
     position: absolute;
   }
@@ -1556,8 +1560,8 @@ input::-webkit-inner-spin-button {
   }
 
   .toBeRemoved {
-    border: 1px solid green;
-    width: 80vw;
+
+    width: 78vw;
     height: 80vh;
     background-color: #0f87ff;
     padding: 10%;
@@ -1776,7 +1780,7 @@ input::-webkit-inner-spin-button {
   .footer {
     color: #ffffff;
     height: 80vh;
-    width: 100vw;
+    width: 98vw;
   }
   .footerTravelLogo {
     text-align: center;
@@ -1792,7 +1796,7 @@ input::-webkit-inner-spin-button {
   .footer {
     background-image: url("../public/Rectangle 206.svg");
     background-size: cover;
-    background-position: 50% 0%;
+    background-position: 60% 0%;
   }
   .addressHeading {
     font-weight: 700;
@@ -1835,7 +1839,7 @@ input::-webkit-inner-spin-button {
 
   .ourMessage {
     color: #ffa90f;
-    padding-top: 60px;
+    padding-top: 40px;
     text-align: center;
   }
   @media only screen and (width: 375px) {
@@ -1857,15 +1861,16 @@ input::-webkit-inner-spin-button {
   }
 
   @media only screen and (min-width: 390px) {
+
     .main-heading {
       font-size: 46px;
     }
     .leftArrowHero {
-      padding-right: 40px;
+      padding-right: 25px;
     }
 
     .rightArrowHero {
-      padding-left: 40px;
+      padding-left: 25px;
     }
     .carouselImageFour {
       bottom: 35%;

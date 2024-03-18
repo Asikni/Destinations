@@ -6,10 +6,10 @@ function NatureComp() {
         backgroundColor: "#1E2126",
         height: "100vh",
        
-        width: "100vw",
+       
       }}
     >
-      <div className="natureimages"></div>
+      <div className="natureimages" ></div>
       <div
         className="natureDescription"
         style={{
@@ -19,7 +19,7 @@ function NatureComp() {
        
         }}
       >
-        <div className="natureHeadingDescription">
+        <div className="natureHeadingDescription" >
         <div className="Nature" >
           <p className="natureHeading">Connect With </p>
           <p className="natureHeading">Nature</p>

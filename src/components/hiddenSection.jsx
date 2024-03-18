@@ -7,11 +7,11 @@ function HiddenGems() {
         height: "100vh",
        
         position: "relative",
-        width: "100vw",
+        
       }}
     >
       <div className="hiddenText">Discover Hidden Gems</div>
-      <div className="carousel" style={{ width: "100vw", height: "100vh" }}>
+      <div className="carousel" >
         <div className="carouselImageOne"></div>
         <div className="carouselImageTwo"></div>
         <div className="carouselImageThree"></div>

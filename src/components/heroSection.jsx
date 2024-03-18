@@ -4,7 +4,7 @@ import Header from "./header";
 function Hero() {
   const changeImages = () => {};
   return (
-    <div className="hero" style={{ width: "100vw" }}>
+    <div className="hero" style={{  }}>
       <Header />
 
       <div className="top-heading"> Explore Kashmir's Beauty </div>
