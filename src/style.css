@@ -5,9 +5,6 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
-  border: 1px solid red;
-
-  
 }
 
 .header {
@@ -104,18 +101,25 @@
 
 .btn-1 {
   width: 200px;
-  height: 50px;
+  height: 60px;
   border-radius: 10px;
   background-color: #ffa90f;
   margin-right: 25px;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
 
 .btn-2 {
   width: 200px;
-  height: 50px;
+  height: 60px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.13);
   margin-left: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
 
 .logos {
@@ -166,11 +170,13 @@
   color: #fffef5;
 }
 .natureimages {
-  background-image: url("../public/natureimage1.svg");
+  background-image: url("../public/Rectangle 197.png");
   width: 50%;
-  height: 100%;
-  background-size: cover;
+  height: 90%;
+  background-size: auto;
+  background-repeat: no-repeat;
   background-position: 0px 50%;
+  box-shadow: 5px 4px 22px rgba(230, 230, 230, 0.12);
 }
 .hiddenSection {
   display: flex;
@@ -186,9 +192,47 @@
   position: absolute;
   top: 45px;
 }
-/* .sonamarg {
-  height: 500px;
-} */
+
+.destinationDetails {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  top: 470px;
+  left: 435px;
+  color: white;
+}
+.destinationName {
+  font-weight: 600;
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+.Details {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.navigationLogo {
+  width: 19px;
+  padding-right: 10px;
+}
+
+.tripDays {
+  font-weight: 500;
+  font-size: 18px;
+  padding-right: 20px;
+}
+.moneyLogo {
+  width: 12px;
+}
+.moneyDetails {
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
 .carouselImageOne {
   background-image: url("../public/Rectangle 200.svg");
   width: 50%;
@@ -203,7 +247,7 @@
 
 .carouselImageTwo {
   background-image: url("../public/hiddenimagetwo.jpg");
-  width: 50%;
+  width: 20%;
   height: 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -672,6 +716,7 @@ input::-webkit-inner-spin-button {
   height: 60px;
   border-radius: 10px;
   background-color: #ffa90f;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
 .loadingLogo {
   position: absolute;
@@ -699,6 +744,7 @@ input::-webkit-inner-spin-button {
   padding-top: 100px;
 }
 .contactInfo {
+  color: #ffffff;
   padding-top: 80px;
   padding-right: 35px;
   display: flex;
@@ -768,7 +814,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
   .top-heading {
     padding-top: 200px;
     font-weight: 600;
@@ -796,7 +842,7 @@ input::-webkit-inner-spin-button {
   }
 
   .hero {
-    background-position: 0% 20%;
+    background-position: 0% 10%;
   }
   .main-heading {
     font-size: 80px;
@@ -805,10 +851,12 @@ input::-webkit-inner-spin-button {
   .btn-1 {
     width: 230px;
     height: 80px;
+    font-size: 21px;
   }
   .btn-2 {
     width: 230px;
     height: 80px;
+    font-size: 21px;
   }
 
   .Nature {
@@ -828,67 +876,77 @@ input::-webkit-inner-spin-button {
     font-size: 25px;
     text-align: justify;
   }
+  .side-heading {
+    left: 5px;
+  }
+
+  .natureimages {
+    background-size: cover;
+  }
   .hiddenText {
     font-size: 80px;
     top: 70px;
   }
+
   .carouselImageOne {
-    background-image: url("../public/Rectangle 200.svg");
     width: 50%;
     height: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 0;
-    position: absolute;
+
     bottom: 190px;
     left: 230px;
   }
 
   .carouselImageTwo {
-    background-image: url("../public/hiddenimagetwo.jpg");
     width: 50%;
     height: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-    position: absolute;
+
     bottom: 160px;
     left: 380px;
   }
 
   .carouselImageThree {
-    background-image: url("../public/hiddenimagethree.svg");
-    width: 60%;
-    height: 60%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 2;
-    position: absolute;
+    width: 40%;
+
     bottom: 130px;
     left: 30%;
   }
   .carouselImageFour {
-    background-image: url("../public/hiddenimagefour.jpg");
     width: 50%;
     height: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-    position: absolute;
+
     bottom: 160px;
     right: 140px;
   }
 
   .carouselImageFive {
-    background-image: url("../public/hiddenimagefive.jpg");
     width: 30%;
     height: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 0;
-    position: absolute;
+
     bottom: 190px;
     right: 190px;
+  }
+
+  .destinationDetails {
+    top: 720px;
+    left: 630px;
+  }
+  .destinationName {
+    font-size: 48px;
+  }
+
+  .navigationLogo {
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  .tripDays {
+    font-size: 30px;
+  }
+  .moneyLogo {
+    width: 18px;
+  }
+  .moneyDetails {
+    font-size: 30px;
   }
 
   .arrows {
@@ -898,16 +956,16 @@ input::-webkit-inner-spin-button {
   }
   .leftarrow {
     color: #ffa90f;
-    width: 200px;
     font-size: 80px;
     font-family: Montserrat;
   }
 
   .rightarrow {
     color: #ffa90f;
-    font-size: 70px;
+
     font-size: 80px;
     font-family: Montserrat;
+    padding-left: 40px;
   }
 
   .trektopsection {
@@ -1118,8 +1176,9 @@ input::-webkit-inner-spin-button {
     height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     margin-left: 450px;
-    margin-top: 60px;
+    margin-top: 0px;
   }
 
   .contactTopHeading {
@@ -1222,12 +1281,12 @@ input::-webkit-inner-spin-button {
     font-size: 21px;
   }
   .loadingLogo {
-    bottom: 70px;
+    bottom: 65px;
     left: 1180px;
   }
 
   .approvedLogo {
-    bottom: 70px;
+    bottom: 65px;
     left: 1280px;
   }
   .contactInfo {
@@ -1411,9 +1470,6 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     text-align: center;
   }
-  /* .sonamarg {
-    height: 500px;
-  } */
 
   .carouselImageOne {
     /* background-image: url("../public/Rectangle 200.svg");
@@ -1464,6 +1520,41 @@ input::-webkit-inner-spin-button {
     right: -190px; */
     display: none;
   }
+
+  .destinationDetails {
+    top: 390px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .destinationName {
+   
+    font-size: 20px;
+    text-align: center;
+    margin-left: 80px;
+  }
+
+
+  .navigationLogo {
+    width: 17px;
+   
+  }
+
+  .tripDays {
+   
+    font-size: 15px;
+    padding-right: 20px;
+  }
+  .moneyLogo {
+    width: 10px;
+  }
+  .moneyDetails {
+    
+
+    font-size: 15px;
+    padding-left: 5px;
+  }
+
   .arrows {
     bottom: 10px;
   }
@@ -1560,7 +1651,6 @@ input::-webkit-inner-spin-button {
   }
 
   .toBeRemoved {
-
     width: 78vw;
     height: 80vh;
     background-color: #0f87ff;
@@ -1858,10 +1948,15 @@ input::-webkit-inner-spin-button {
     .footer {
       height: 100vh;
     }
+    .destinationDetails {
+      top: 380px;
+      left: 40px;
+
+    }
+
   }
 
   @media only screen and (min-width: 390px) {
-
     .main-heading {
       font-size: 46px;
     }
@@ -1926,6 +2021,19 @@ input::-webkit-inner-spin-button {
     .footer {
       height: 100vh;
       background-position: 80% 0%;
+    }
+
+    .destinationDetails {
+      top: 520px;
+      left: 65px;
+
+    }
+    @media only screen and (width: 390px){
+      .destinationDetails {
+        top: 480px;
+        left: 60px;
+  
+      }
     }
   }
 }
