@@ -1,7 +1,16 @@
+import { useState } from "react";
 import Card from "../card";
 import stories from "../cardData";
 
 function StoriesSection() {
+  const[currenStoryIndex, setCurrentStoryIndex] = useState(0)
+const newStory = () => {
+  setCurrentStoryIndex(currenStoryIndex < stories.length -1   ? currenStoryIndex + 1 : 0 )
+}
+const oldStory = () => {
+  setCurrentStoryIndex(currenStoryIndex > 0 ? currenStoryIndex - 1 : stories.length -1 )
+}
+
   return (
     <div
       className="Stories"
@@ -12,22 +21,25 @@ function StoriesSection() {
         className="heroTravelSection"
         style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
       >
-        <div className="leftArrowTravelSection" >
+        <div className="leftArrowTravelSection"  onClick={oldStory}>
           &lt;
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          {stories.map((story, index) => (
+        
+            
             <Card
-              key={index}
-              story={story.comment}
-              name={story.from}
-              works={story.worksAt}
+
+              story={stories[currenStoryIndex].comment}
+              name={stories[currenStoryIndex].from}
+              works={stories[currenStoryIndex].worksAt}
             />
-          ))}
+      
         </div>
 
         <div
           className="rightArrowTravelSection"
+          onClick={newStory}
+          
 
         >
           &gt;

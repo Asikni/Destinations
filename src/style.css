@@ -42,7 +42,7 @@
   z-index: 1;
 }
 .hero {
-  background-image: url("../public/Rectangle 196.svg");
+
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -544,7 +544,9 @@
   color: #ffa90f;
   margin-top: 80px;
 }
-
+  
+.leftArrowTravelSection:hover{
+  cursor: pointer;}
 .rightArrowTravelSection {
   font-family: monospace;
   font-size: 100px;
@@ -552,7 +554,9 @@
   color: #ffa90f;
   margin-top: 60px;
 }
-
+.rightArrowTravelSection:hover{
+  cursor: pointer;
+}
 .contactBgImage {
   background-image: url("../public/Rectangle 16.svg");
   width: 62%;

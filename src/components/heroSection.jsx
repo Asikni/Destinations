@@ -1,24 +1,44 @@
 import Button from "../buttons";
 import Header from "./header";
+import { useState } from "react";
+import images from "./images";
 
 function Hero() {
-  const changeImages = () => {};
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  console.log(currentImageIndex);
+  const imageToTheRight = () => {
+    setCurrentImageIndex(
+      currentImageIndex < images.length - 1 ? currentImageIndex + 1 : 0
+    );
+    
+    console.log(currentImageIndex);
+
+  };
+  const imageToTheLeft = () => {
+    setCurrentImageIndex(currentImageIndex <= 0 ? images.length -1  : currentImageIndex - 1);
+    console.log(currentImageIndex);
+  };
   return (
-    <div className="hero" style={{  }}>
+    <div
+      className="hero"
+      style={{
+        backgroundImage: `url(${images[currentImageIndex][currentImageIndex]})`,
+      }}
+    >
       <Header />
 
       <div className="top-heading"> Explore Kashmir's Beauty </div>
-      <div
-        className="mainheadingsection"
-        style={{ display: "flex" }}
-      >
-        <div className="leftArrowHero"> &lt; </div>
+      <div className="mainheadingsection" style={{ display: "flex" }}>
+        <div className="leftArrowHero" onClick={imageToTheLeft}>
+          {" "}
+          &lt;{" "}
+        </div>
 
         <div className="main-heading" style={{ fontWeight: "bold" }}>
           <p>Adventure in</p>
           <p>Paradise</p>
         </div>
-        <div className="rightArrowHero" onClick={changeImages}>
+        <div className="rightArrowHero" onClick={imageToTheRight}>
           {">"}
         </div>
       </div>
