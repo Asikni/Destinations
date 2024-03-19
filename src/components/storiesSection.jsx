@@ -1,19 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "../card";
 import stories from "../cardData";
 
 function StoriesSection() {
-  const [currenStoryIndex, setCurrentStoryIndex] = useState(0);
+  const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
+  const [transitioning, setTransitioning] = useState(false);
+  const [nextStoryIndex, setNextStoryIndex] = useState(0);
+
   const newStory = () => {
-    setCurrentStoryIndex(
-      currenStoryIndex < stories.length - 1 ? currenStoryIndex + 1 : 0
+    setTransitioning(true);
+    setNextStoryIndex(
+      currentStoryIndex < stories.length - 1 ? currentStoryIndex + 1 : 0
     );
   };
+
   const oldStory = () => {
-    setCurrentStoryIndex(
-      currenStoryIndex > 0 ? currenStoryIndex - 1 : stories.length - 1
+    setTransitioning(true);
+    setNextStoryIndex(
+      currentStoryIndex > 0 ? currentStoryIndex - 1 : stories.length - 1
     );
   };
+
+  useEffect(() => {
+    if (transitioning) {
+      const transitionTimeout = setTimeout(() => {
+        setCurrentStoryIndex(nextStoryIndex);
+        setTransitioning(false);
+      }, 500);
+      return () => clearTimeout(transitionTimeout);
+    }
+  });
 
   return (
     <div
@@ -23,30 +39,21 @@ function StoriesSection() {
       <div className="travelStoriesHeading">Travel Stories</div>
       <div
         className="heroTravelSection"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-        }}
+        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
       >
         <div className="leftArrowTravelSection" onClick={oldStory}>
           &lt;
         </div>
         <div
-          className="cardTemp"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            
-          }}
+          className={`cardTemp ${transitioning ? "exiting" : ""}`}
+          style={{ display: "flex", justifyContent: "center" }}
         >
           <Card
-            story={stories[currenStoryIndex].comment}
-            name={stories[currenStoryIndex].from}
-            works={stories[currenStoryIndex].worksAt}
+            story={stories[currentStoryIndex].comment}
+            name={stories[currentStoryIndex].from}
+            works={stories[currentStoryIndex].worksAt}
           />
         </div>
-
         <div className="rightArrowTravelSection" onClick={newStory}>
           &gt;
         </div>

@@ -1,28 +1,35 @@
-
 import Button from "../buttons";
+import TopHeading from "../topHeading";
+
 const images = [
   {
     0: "heroBgImageOne.svg",
-    topHeading:"Explore Kashmir's Beauty",
-    mainHeadingOne:"Adventure ",
-    mainHeadingTwo:" in Paradise",
+    topHeading: (
+      <TopHeading headingClass={"top-heading"}>
+        Explore Kashmir's Beauty
+      </TopHeading>
+    ),
+    mainHeadingOne: "Adventure ",
+    mainHeadingTwo: " in Paradise",
     buttonOne: <Button btnClass={"btn-1"}>Find out more</Button>,
-    buttonTwo:<Button btnClass={"btn-2"}> Contact Us </Button>
+    buttonTwo: <Button btnClass={"btn-2"}> Contact Us </Button>,
   },
   {
     1: "hiddenimagethree.svg",
-    topHeading:"Beautiful mountains",
-    mainHeadingOne:"Lakes",
-    mainHeadingTwo:" and Glaciers"
+    topHeading: (
+      <TopHeading headingClass={"top-heading"}>Beautiful Moutains</TopHeading>
+    ),
+    mainHeadingOne: "Lakes",
+    mainHeadingTwo: " and Glaciers",
   },
   {
-    2:"hiddenimagefour.jpg",
-    topHeading:"",
-    mainHeadingOne:""
+    2: "hiddenimagefour.jpg",
+    topHeading: "",
+    mainHeadingOne: "",
   },
   {
-    3: "hiddenimagefive.jpg"
-  }
+    3: "hiddenimagefive.jpg",
+  },
 ];
 
 export default images;

@@ -51,23 +51,34 @@
   height: 100vh;
   background-position: 0% 10%;
   position: relative;
-  animation: myfirst 5s;
+  transition: all 0.3s ease forwards;
 }
-
-@keyframes myfirst {
+@keyframes move-in {
   0% {
-    left: 0px;
-    
-  }
-  75% {
-    left: 200px;
-    
+    opacity: 0;
+    transform: translateY(-50%);
   }
   100% {
-    left: 0px;
-   
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
+
+.imgTemp.exiting {
+  animation: move-out .5s ease forwards;
+}
+
+@keyframes move-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+}
+
 .top-heading {
   padding-top: 130px;
   font-family: Poppins;
@@ -75,6 +86,7 @@
   font-size: 25px;
   color: #ffffff;
   letter-spacing: 0.54em;
+
 }
 .main-heading {
   font-family: Montserrat;
@@ -112,7 +124,6 @@
   font-family: monospace;
   right: 180px;
   top: 300px;
-
 }
 
 .leftArrowHero {
@@ -558,6 +569,42 @@
   height: 330px;
   margin-top: 100px;
   border-radius: 11px;
+}
+.imgTemp {
+  animation: move-in 1s ease forwards;
+}
+
+
+.cardTemp {
+  display: flex;
+  justify-content: center;
+  animation: slide-in 1s ease forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.cardTemp.exiting {
+  animation: slide-out 1s ease forwards;
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
 }
 
 .commentSection {

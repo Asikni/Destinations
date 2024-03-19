@@ -1,24 +1,35 @@
-import Button from "../buttons";
 import Header from "./header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import images from "./images";
-
 
 function HeroTwo() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
- 
+
+  const [transitioning, setTransitioning] = useState(false);
+  const [nextImageIndex, setNextImageIndex] = useState(0);
+
   const imageToTheRight = () => {
-    setCurrentImageIndex(
+    setTransitioning(true);
+    setNextImageIndex(
       currentImageIndex < images.length - 1 ? currentImageIndex + 1 : 0
     );
-
   };
   const imageToTheLeft = () => {
-    setCurrentImageIndex(
+    setTransitioning(true);
+    setNextImageIndex(
       currentImageIndex <= 0 ? images.length - 1 : currentImageIndex - 1
     );
-  
   };
+
+  useEffect(() => {
+    if (transitioning) {
+      const transitionTimeout = setTimeout(() => {
+        setCurrentImageIndex(nextImageIndex);
+        setTransitioning(false);
+      }, 500);
+      return () => clearTimeout(transitionTimeout);
+    }
+  });
   return (
     <div
       className="hero"
@@ -27,24 +38,22 @@ function HeroTwo() {
       }}
     >
       <Header />
-
-      <div className="top-heading"> {images[currentImageIndex].topHeading} </div>
-      <div className="mainheadingsection" >
-
-
-        <div className="main-heading" style={{ fontWeight: "bold" }}>
-          <p>{images[currentImageIndex].mainHeadingOne} </p>
-          <p>{images[currentImageIndex].mainHeadingTwo} </p>
+      <div className={`imgTemp ${transitioning ? "exiting" : ""}`}>
+        <div> {images[currentImageIndex].topHeading} </div>
+        <div className="mainheadingsection">
+          <div className="main-heading" style={{ fontWeight: "bold" }}>
+            <p>{images[currentImageIndex].mainHeadingOne} </p>
+            <p>{images[currentImageIndex].mainHeadingTwo} </p>
+          </div>
         </div>
-
       </div>
       <div className="leftArrowHero2" onClick={imageToTheLeft}>
-          {" "}
-          &lt;{" "}
-        </div>
-        <div className="rightArrowHero2" onClick={imageToTheRight}>
-          {">"}
-        </div>
+        {" "}
+        &lt;{" "}
+      </div>
+      <div className="rightArrowHero2" onClick={imageToTheRight}>
+        {">"}
+      </div>
       <div className="buttonsHeroSection">
         {/* <Button btnClass={"btn-1"}>Find out more</Button> */}
         {images[currentImageIndex].buttonOne}
