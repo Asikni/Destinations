@@ -5,6 +5,7 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
+  border: 1px solid violet;
 }
 
 .header {
@@ -49,6 +50,23 @@
   color: #ffffff;
   height: 100vh;
   background-position: 0% 10%;
+  position: relative;
+  animation: myfirst 5s;
+}
+
+@keyframes myfirst {
+  0% {
+    left: 0px;
+    
+  }
+  75% {
+    left: 200px;
+    
+  }
+  100% {
+    left: 0px;
+   
+  }
 }
 .top-heading {
   padding-top: 130px;
@@ -74,9 +92,32 @@
   padding-top: 50px;
   width: 98vw;
 }
+.leftArrowHero2 {
+  position: absolute;
+  font-size: 100px;
+  margin-right: 300px;
+  cursor: pointer;
+  color: #ffa90f;
+  font-family: monospace;
+  left: 180px;
+  top: 300px;
+}
+
+.rightArrowHero2 {
+  position: absolute;
+  font-size: 100px;
+  margin-left: 300px;
+  cursor: pointer;
+  color: #ffa90f;
+  font-family: monospace;
+  right: 180px;
+  top: 300px;
+
+}
+
 .leftArrowHero {
   font-size: 100px;
-  padding-right: 300px;
+  margin-right: 300px;
   cursor: pointer;
   color: #ffa90f;
   font-family: monospace;
@@ -84,7 +125,7 @@
 
 .rightArrowHero {
   font-size: 100px;
-  padding-left: 300px;
+  margin-left: 300px;
   cursor: pointer;
   color: #ffa90f;
   font-family: monospace;
@@ -1420,16 +1461,33 @@ input::-webkit-inner-spin-button {
     left: 20px;
     top: -20px;
   }
+  .leftArrowHero2 {
+    position: absolute;
+    font-size: 70px;
+    margin-right: 10px;
+
+    left: 10px;
+    top: 100px;
+  }
+
+  .rightArrowHero2 {
+    position: absolute;
+    font-size: 70px;
+    margin-left: 10px;
+
+    right: 10px;
+    top: 100px;
+  }
 
   .leftArrowHero {
     font-size: 70px;
-    padding-right: 10px;
+    margin-right: 10px;
     align-self: center;
   }
 
   .rightArrowHero {
     font-size: 70px;
-    padding-left: 10px;
+    margin-left: 10px;
     align-self: center;
   }
 
@@ -1963,11 +2021,11 @@ input::-webkit-inner-spin-button {
       font-size: 46px;
     }
     .leftArrowHero {
-      padding-right: 25px;
+      margin-right: 25px;
     }
 
     .rightArrowHero {
-      padding-left: 25px;
+      margin-left: 25px;
     }
     .carouselImageFour {
       bottom: 35%;
