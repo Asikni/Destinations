@@ -42,7 +42,6 @@
   z-index: 1;
 }
 .hero {
-
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -234,7 +233,7 @@
 }
 
 .carouselImageOne {
-  background-image: url("../public/Rectangle 200.svg");
+  background-image: url("../public/hiddenimageone.svg");
   width: 50%;
   height: 40%;
   background-size: contain;
@@ -297,17 +296,22 @@
   position: absolute;
   bottom: 0px;
 }
-.leftarrow {
+.leftArrowHiddenSection {
   color: #ffa90f;
   width: 150px;
   font-size: 70px;
 }
+.leftArrowHiddenSection:hover {
+  cursor: pointer;
+}
 
-.rightarrow {
+.rightArrowHiddenSection {
   color: #ffa90f;
   font-size: 70px;
 }
-
+.rightArrowHiddenSection:hover {
+  cursor: pointer;
+}
 .trektopsection {
   display: flex;
   flex-direction: row;
@@ -514,6 +518,7 @@
   margin-top: 100px;
   border-radius: 11px;
 }
+
 .commentSection {
   font-size: 19px;
   font-weight: 500;
@@ -544,9 +549,10 @@
   color: #ffa90f;
   margin-top: 80px;
 }
-  
-.leftArrowTravelSection:hover{
-  cursor: pointer;}
+
+.leftArrowTravelSection:hover {
+  cursor: pointer;
+}
 .rightArrowTravelSection {
   font-family: monospace;
   font-size: 100px;
@@ -554,7 +560,7 @@
   color: #ffa90f;
   margin-top: 60px;
 }
-.rightArrowTravelSection:hover{
+.rightArrowTravelSection:hover {
   cursor: pointer;
 }
 .contactBgImage {
@@ -1532,20 +1538,16 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
   }
   .destinationName {
-   
     font-size: 20px;
     text-align: center;
     margin-left: 80px;
   }
 
-
   .navigationLogo {
     width: 17px;
-   
   }
 
   .tripDays {
-   
     font-size: 15px;
     padding-right: 20px;
   }
@@ -1553,8 +1555,6 @@ input::-webkit-inner-spin-button {
     width: 10px;
   }
   .moneyDetails {
-    
-
     font-size: 15px;
     padding-left: 5px;
   }
@@ -1955,9 +1955,7 @@ input::-webkit-inner-spin-button {
     .destinationDetails {
       top: 380px;
       left: 40px;
-
     }
-
   }
 
   @media only screen and (min-width: 390px) {
@@ -2030,13 +2028,11 @@ input::-webkit-inner-spin-button {
     .destinationDetails {
       top: 520px;
       left: 65px;
-
     }
-    @media only screen and (width: 390px){
+    @media only screen and (width: 390px) {
       .destinationDetails {
         top: 480px;
         left: 60px;
-  
       }
     }
   }

@@ -1,0 +1,52 @@
+.hiddenSection {
+    background-color: #1e2126;
+    height: 100vh;
+    position: relative;
+  }
+  
+
+  
+  .carouselImage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 100px;
+  }
+  
+  .carouselImage.main {
+    width: 37%; /* Adjusted to match the original width of image three */
+    height: 60%; /* Adjusted to match the original height of image three */
+    z-index: 2;
+    left: 30%;
+  }
+  
+  .carouselImage:not(.main) {
+    width: 40%; /* Adjusted to match the original width of image two */
+    height: 50%; /* Adjusted to match the original height of image two */
+    z-index: 1;
+  }
+  
+  .carouselImage.left {
+    left: 20%; /* Adjusted to position image two on the left */
+    bottom: 20%;
+  }
+  
+  .carouselImage.right {
+    right: 18%; /* Adjusted to position image four on the right */
+    bottom: 20%;
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .carouselImage.main {
+      width: 70%;
+      height: 35%;
+    }
+  
+    .carouselImage:not(.main) {
+      width: 70%;
+      height: 35%;
+    }
+  }
+  
