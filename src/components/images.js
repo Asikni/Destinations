@@ -1,5 +1,8 @@
+
+
 import Button from "../buttons";
 import TopHeading from "../topHeading";
+
 
 const images = [
   {
@@ -12,7 +15,9 @@ const images = [
     mainHeadingOne: "Adventure ",
     mainHeadingTwo: " in Paradise",
     buttonOne: <Button btnClass={"btn-1"}>Find out more</Button>,
-    buttonTwo: <Button btnClass={"btn-2"}> Contact Us </Button>,
+    // buttonTwo: <Button btnClass={"btn-2"} > Contact Us </Button>,
+    showContactButton: true
+
   },
   {
     1: "hiddenimagethree.svg",

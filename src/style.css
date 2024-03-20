@@ -5,7 +5,6 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
-  border: 1px solid violet;
 }
 
 .header {
@@ -65,7 +64,7 @@
 }
 
 .imgTemp.exiting {
-  animation: move-out .5s ease forwards;
+  animation: move-out 0.5s ease forwards;
 }
 
 @keyframes move-out {
@@ -86,7 +85,6 @@
   font-size: 25px;
   color: #ffffff;
   letter-spacing: 0.54em;
-
 }
 .main-heading {
   font-family: Montserrat;
@@ -574,7 +572,6 @@
   animation: move-in 1s ease forwards;
 }
 
-
 .cardTemp {
   display: flex;
   justify-content: center;
@@ -653,18 +650,18 @@
 }
 .contactBgImage {
   background-image: url("../public/Rectangle 16.svg");
-  width: 62%;
-  height: 95vh;
+  width: 60%;
+  height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
+background-position:center;
 }
 
 .contactTopHeading {
-  position: absolute;
-  top: 50px;
-  left: 450px;
+  text-align: center;
+  padding-top: 50px;
   color: #ffa90f;
   font-weight: 700;
   font-size: 55px;
@@ -672,29 +669,41 @@
 }
 
 .contactHeroHeading {
-  position: absolute;
-  top: 150px;
-  left: 530px;
+  text-align: center;
+  padding-top: 30px;
   color: #ffffff;
   font-weight: 500;
   font-size: 20px;
 }
+.cardContent {
 
+  margin-top: 50px;
+}
+.nameEmail {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  
+}
+
+.aboutName {
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+ 
+}
 .detailSectionName {
-  position: absolute;
-  top: 250px;
-  left: 330px;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
 
 .nameField {
-  position: absolute;
-  top: 280px;
-  left: 330px;
   font-weight: 400;
   font-size: 20px;
+  
 }
 
 .nameField input {
@@ -704,23 +713,24 @@
 .lineName {
   border: 1px solid #ffffff;
   width: 280px;
-  position: absolute;
-  top: 320px;
-  left: 330px;
-}
+ 
 
+}
+.aboutEmail{
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+
+}
 .detailSectionMail {
-  position: absolute;
-  top: 250px;
-  left: 700px;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
+
+
 .emailField {
-  position: absolute;
-  top: 280px;
-  left: 700px;
+
   font-weight: 400;
   font-size: 20px;
 }
@@ -731,23 +741,28 @@
 .lineMail {
   border: 1px solid #ffffff;
   width: 280px;
-  position: absolute;
-  top: 320px;
-  left: 700px;
+
+}
+.pNoMsg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
+.aboutPNo{
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+}
 .detailSectionPno {
-  position: absolute;
-  top: 350px;
-  left: 330px;
+
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
 .numberField {
-  position: absolute;
-  top: 380px;
-  left: 330px;
+
   font-weight: 400;
   font-size: 20px;
 }
@@ -759,23 +774,21 @@
 .linePno {
   border: 1px solid #ffffff;
   width: 280px;
-  position: absolute;
-  top: 420px;
-  left: 330px;
-}
 
+}
+.aboutMsg{
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+}
 .detailSectionMsg {
-  position: absolute;
-  top: 350px;
-  left: 700px;
+
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
 .messageField {
-  position: absolute;
-  top: 380px;
-  left: 700px;
+
   font-weight: 400;
   font-size: 20px;
 }
@@ -787,9 +800,7 @@
 .lineMessage {
   border: 1px solid #ffffff;
   width: 280px;
-  position: absolute;
-  top: 420px;
-  left: 700px;
+
 }
 
 input[type="text"],
@@ -806,34 +817,49 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.btn-logo-ContactSection{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  gap:50px;
+  margin-left: 180px;
+
+}
+
+
+
 .btn-3 {
-  position: absolute;
-  top: 500px;
-  left: 550px;
+  
   width: 190px;
   height: 60px;
   border-radius: 10px;
   background-color: #ffa90f;
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
+
+.btn-3:hover{
+  cursor: pointer;
+}
+
+.twoLogos{
+  display: flex;
+  gap:30px;
+}
 .loadingLogo {
-  position: absolute;
-  bottom: 65px;
-  left: 800px;
+
   background-image: url("../public/loader.svg");
-  width: 5%;
-  height: 7%;
+  width: 50px;
+  height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .approvedLogo {
-  position: absolute;
-  bottom: 65px;
-  left: 880px;
+
   background-image: url("../public/approved.svg");
-  width: 5%;
-  height: 7%;
+  width: 50px;
+  height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
 }

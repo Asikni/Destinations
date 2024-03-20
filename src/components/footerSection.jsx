@@ -25,21 +25,7 @@ function Footer() {
             <div className="socialMediaLogoOne"></div>
             <div className="socialMediaLogoTwo"></div>
             <div className="socialMediaLogoThree"></div>
-            {/* <img
-              src="Social (1).svg"
-              alt="social media logo"
-              style={{ width: "80px", height: "80px" }}
-            /> */}
-            {/* <img
-              src="Social (2).svg"
-              alt="social media logo"
-              style={{ width: "80px", height: "80px" }}
-            /> */}
-            {/* <img
-              src="Social (3).svg"
-              alt="social media logo"
-              style={{ width: "80px", height: "80px" }}
-            /> */}
+
           </div>
         </div>
       </div>

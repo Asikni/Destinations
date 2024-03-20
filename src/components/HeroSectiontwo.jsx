@@ -1,8 +1,10 @@
 import Header from "./header";
 import { useState, useEffect } from "react";
 import images from "./images";
+import Button from "../buttons";
 
-function HeroTwo() {
+
+function HeroTwo({setIsOpen}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const [transitioning, setTransitioning] = useState(false);
@@ -58,7 +60,11 @@ function HeroTwo() {
         {/* <Button btnClass={"btn-1"}>Find out more</Button> */}
         {images[currentImageIndex].buttonOne}
         {/* <Button btnClass={"btn-2"}> Contact Us </Button> */}
-        {images[currentImageIndex].buttonTwo}
+        {images[currentImageIndex].showContactButton && (
+        <Button btnClass={'btn-2'} onClick={() => setIsOpen(true)}>
+          Contact Us
+        </Button>
+      )}
         <div className="logos">
           <div>
             <img src="Facebook Icon.svg" alt="facebook logo"></img>
