@@ -5,7 +5,6 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
-
 }
 
 .header {
@@ -15,6 +14,7 @@
   align-items: center;
   width: 98vw;
   padding-top: 30px;
+  /* position:fixed; */
 }
 .summerLogo {
   background-image: url("../public/firstLogoImage.svg");
@@ -103,6 +103,7 @@
   padding-top: 50px;
   width: 98vw;
 }
+
 .leftArrowHero2 {
   position: absolute;
   font-size: 100px;
@@ -140,14 +141,6 @@
   color: #ffa90f;
   font-family: monospace;
 }
-.side-heading {
-  position: absolute;
-  left: 0px;
-  top: 70px;
-  rotate: 270deg;
-  font-weight: 600;
-  font-size: 20px;
-}
 
 .btn-1 {
   width: 200px;
@@ -172,15 +165,33 @@
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
 
-.logos {
+.btn-1:hover,
+.btn-2:hover{
+  cursor: pointer;
+}
+.logoSideHeading {
   position: absolute;
-  left: 60px;
-  top: -110px;
   display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+
+  margin-top: 350px;
+  gap: 80px;
+}
+
+.logos {
+  display: flex;
+
   flex-direction: column;
   align-items: center;
   height: 100px;
   justify-content: space-between;
+}
+
+.side-heading {
+  rotate: 270deg;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .Nature {
@@ -914,7 +925,22 @@ input::-webkit-inner-spin-button {
   padding-top: 80px;
   text-align: center;
 }
+.modalCrossButton {
+  position: fixed;
 
+  right: 2%;
+  width: 2%;
+  height: 6%;
+
+  background-color: #1e2126;
+  color: #ffffff;
+  font-size: 35px;
+  border: none;
+}
+
+.modalCrossButton:hover {
+  cursor: pointer;
+}
 @media only screen and (min-width: 1400px) {
   .top-heading {
     padding-top: 200px;
@@ -949,6 +975,16 @@ input::-webkit-inner-spin-button {
     font-size: 80px;
     text-align: center;
   }
+
+  .leftArrowHero2 {
+
+ 
+    top: 400px;
+  }
+  
+  .rightArrowHero2 {
+    top: 400px;
+  }
   .btn-1 {
     width: 230px;
     height: 80px;
@@ -960,6 +996,22 @@ input::-webkit-inner-spin-button {
     font-size: 21px;
   }
 
+  .logoSideHeading {
+
+  
+    margin-top: 550px;
+    gap: 100px;
+  }
+  
+  .logos {
+
+    height: 120px;
+   
+  }
+  .side-heading {
+
+    font-size: 25px;
+  }
   .Nature {
     padding: 0px 100px;
     margin-top: 70px;
@@ -1086,7 +1138,7 @@ input::-webkit-inner-spin-button {
     font-size: 30px;
   }
 
-  .topsectiionheading2 {
+  .topsectionheading2 {
     font-size: 80px;
     font-family: Montserrat;
   }
@@ -1248,8 +1300,8 @@ input::-webkit-inner-spin-button {
     justify-content: center;
   }
   .card {
-    width: 45%;
-    height: 400px;
+    width: 650px;
+    height: 430px;
   }
   .commentSection {
     font-size: 25px;
@@ -1267,128 +1319,138 @@ input::-webkit-inner-spin-button {
   }
   .leftArrowTravelSection {
     font-size: 120px;
+    margin-right: 300px;
   }
 
   .rightArrowTravelSection {
     font-size: 120px;
-  }
-  .contactBgImage {
-    width: 60%;
-    height: 800px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 450px;
-    margin-top: 0px;
+    margin-left: 300px;
   }
 
   .contactTopHeading {
-    top: 70px;
-    left: 750px;
-
+    padding-top: 130px;
     font-size: 60px;
   }
 
   .contactHeroHeading {
-    top: 190px;
-    left: 810px;
-
+    padding-top: 60px;
     font-size: 25px;
   }
+  .cardContent {
+    margin-top: 80px;
+  }
 
+  .nameEmail {
+ 
+
+    margin-bottom: 100px;
+  }
+
+  .aboutName {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
   .detailSectionName {
-    position: absolute;
-    top: 340px;
-    left: 530px;
-    color: #ffffff;
-    font-weight: 400;
     font-size: 25px;
   }
   .nameField {
-    top: 380px;
-    left: 530px;
-    font-weight: 400;
     font-size: 20px;
+  }
+
+  .nameField input {
+    font-size: 18px;
   }
   .lineName {
     width: 400px;
+  }
 
-    top: 420px;
-    left: 530px;
+  .aboutEmail {
+
+    gap: 3px;
   }
   .detailSectionMail {
-    top: 340px;
-    left: 1050px;
+
 
     font-size: 25px;
   }
   .emailField {
-    top: 380px;
-    left: 1050px;
+ 
     font-weight: 400;
     font-size: 20px;
+  }
+
+  .emailField input {
+    font-size: 18px;
   }
   .lineMail {
     width: 400px;
 
-    top: 420px;
-    left: 1050px;
+
   }
+
   .detailSectionPno {
-    top: 500px;
-    left: 530px;
 
     font-size: 25px;
   }
 
   .numberField {
-    top: 540px;
-    left: 530px;
+
     font-weight: 400;
     font-size: 20px;
   }
+
+  .numberField input {
+    font-size: 18px;
+  }
   .linePno {
     width: 400px;
-
-    top: 580px;
-    left: 530px;
   }
   .detailSectionMsg {
-    top: 500px;
-    left: 1050px;
+
 
     font-size: 25px;
   }
   .messageField {
-    top: 540px;
-    left: 1050px;
+   
     font-weight: 400;
     font-size: 20px;
+  }
+
+  .messageField input {
+    font-size: 18px;
   }
   .lineMessage {
     width: 400px;
 
-    top: 580px;
-    left: 1050px;
+
   }
+  .btn-logo-ContactSection {
 
+    margin-top: 100px;
+    gap: 80px;
+    margin-left: 250px;
+  }
   .btn-3 {
-    position: absolute;
-    top: 670px;
 
-    left: 880px;
     width: 230px;
     height: 81px;
     font-size: 21px;
   }
-  .loadingLogo {
-    bottom: 65px;
-    left: 1180px;
-  }
 
+  .twoLogos {
+    display: flex;
+    gap: 60px;
+  }
+  .loadingLogo {
+
+    width: 60px;
+    height: 70px;
+ 
+  }
   .approvedLogo {
-    bottom: 65px;
-    left: 1280px;
+    width: 60px;
+    height: 70px;
   }
   .contactInfo {
     margin-top: 140px;
@@ -1506,27 +1568,31 @@ input::-webkit-inner-spin-button {
 
     margin-left: 0px;
   }
-
+  .logoSideHeading {
+    margin-top: 400px;
+    gap: 80px;
+    align-content: flex-start;
+    margin-left: -30px;
+  }
   .logos {
-    left: 20px;
-    top: -20px;
+    height: 60px;
   }
   .leftArrowHero2 {
     position: absolute;
-    font-size: 70px;
+    font-size: 60px;
     margin-right: 10px;
 
-    left: 10px;
-    top: 100px;
+    left: 2px;
+    top: 230px;
   }
 
   .rightArrowHero2 {
     position: absolute;
-    font-size: 70px;
+    font-size: 60px;
     margin-left: 10px;
 
-    right: 10px;
-    top: 100px;
+    right: 2px;
+    top: 230px;
   }
 
   .leftArrowHero {
@@ -1776,8 +1842,8 @@ input::-webkit-inner-spin-button {
     justify-content: space-around;
   }
   .card {
-    width: 90%;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
   .commentSection {
     font-size: 14px;
@@ -1830,7 +1896,6 @@ input::-webkit-inner-spin-button {
 
   .nameEmail {
     margin-bottom: 50px;
-   
   }
 
   .aboutName {
@@ -1872,7 +1937,6 @@ input::-webkit-inner-spin-button {
     width: 130px;
   }
   .pNoMsg {
- 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1894,7 +1958,6 @@ input::-webkit-inner-spin-button {
   }
 
   .linePno {
-    
     width: 130px;
   }
 
@@ -1918,7 +1981,6 @@ input::-webkit-inner-spin-button {
   }
 
   .lineMessage {
- 
     width: 130px;
   }
 
@@ -1945,35 +2007,28 @@ input::-webkit-inner-spin-button {
     margin-left: 50px;
   }
   .btn-3 {
-
     width: 150px;
     height: 45px;
     border-radius: 10px;
     background-color: #ffa90f;
   }
   .twoLogos {
-
     gap: 15px;
   }
   .loadingLogo {
-
-
-    width: 35px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  display: none;
-  }
-
-  .approvedLogo {
-
-   
     width: 35px;
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
     display: none;
-   
+  }
+
+  .approvedLogo {
+    width: 35px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
   }
   .footer {
     color: #ffffff;
@@ -2039,6 +2094,17 @@ input::-webkit-inner-spin-button {
     color: #ffa90f;
     padding-top: 40px;
     text-align: center;
+  }
+  .modalCrossButton {
+    position: absolute;
+    top: 2%;
+    right: 7%;
+    width: 5%;
+    height: 5%;
+
+    background-color: #38404c;
+
+    font-size: 35px;
   }
   @media only screen and (width: 375px) {
     .carouselImageFour {

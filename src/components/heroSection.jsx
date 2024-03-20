@@ -45,6 +45,10 @@ function Hero() {
       <div className="buttonsHeroSection">
         <Button btnClass={"btn-1"}>Find out more</Button>
         <Button btnClass={"btn-2"}> Contact Us </Button>
+
+      
+        </div>
+        <div className="logoSideHeading">
         <div className="logos">
           <div>
             <img src="Facebook Icon.svg" alt="facebook logo"></img>
@@ -57,7 +61,7 @@ function Hero() {
           </div>
         </div>
         <div className="side-heading">Follow Us on</div>
-      </div>
+        </div>
     </div>
   );
 }

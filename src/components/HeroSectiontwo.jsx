@@ -65,6 +65,8 @@ function HeroTwo({setIsOpen}) {
           Contact Us
         </Button>
       )}
+        </div>
+        <div className="logoSideHeading">
         <div className="logos">
           <div>
             <img src="Facebook Icon.svg" alt="facebook logo"></img>
@@ -77,7 +79,7 @@ function HeroTwo({setIsOpen}) {
           </div>
         </div>
         <div className="side-heading">Follow Us on</div>
-      </div>
+        </div>
     </div>
   );
 }

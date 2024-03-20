@@ -19,7 +19,7 @@ function App() {
         <Contact />
         </Modal>
       <HeroTwo setIsOpen={setIsOpen}/>
-      <Hero />
+      {/* <Hero /> */}
       <NatureComp />
       <HiddenGems />
       <Treks />

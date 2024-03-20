@@ -14,6 +14,7 @@ const MODAL_STYLES = {
   backgroundColor: "#1E2126",
   padding: "20px", // Add some padding for content spacing
   borderRadius: "10px", // Add rounded corners for aesthetic
+
 };
 
 const OVERLAY_STYLES = {
@@ -33,8 +34,9 @@ export default function Modal({ open, children, onClose }) {
     <>
       <div style={OVERLAY_STYLES} />
       <div style={MODAL_STYLES}>
+      <button className="modalCrossButton"onClick={onClose}>&times; </button>
         {children}
-        <button onClick={onClose}>&times; </button>
+
       </div>
     </>,
     document.getElementById("portal")
