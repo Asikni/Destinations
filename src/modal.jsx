@@ -3,14 +3,17 @@ import ReactDom from "react-dom";
 
 const MODAL_STYLES = {
   position: "fixed",
-  top: "0%",
+  top: "50%",
   left: "50%",
-  width: "500px",
-  height:"200px",
-
+  transform: "translate(-50%, -50%)",
+  width: "100%", // Adjust the width of the modal as needed
+  maxWidth: "100%", // Set a maximum width for responsiveness
+  maxHeight: "100%", // Set a maximum height for responsiveness
+  overflow: "auto", // Enable scrolling if content exceeds modal size
   zIndex: 1000,
-  display: "flex",
-  justifyContent: "space-around",
+  backgroundColor: "#1E2126",
+  padding: "20px", // Add some padding for content spacing
+  borderRadius: "10px", // Add rounded corners for aesthetic
 };
 
 const OVERLAY_STYLES = {

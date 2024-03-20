@@ -5,6 +5,7 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
+
 }
 
 .header {
@@ -656,7 +657,7 @@
   background-repeat: no-repeat;
   margin: 0 auto;
 
-background-position:center;
+  background-position: center;
 }
 
 .contactTopHeading {
@@ -676,23 +677,19 @@ background-position:center;
   font-size: 20px;
 }
 .cardContent {
-
   margin-top: 50px;
 }
 .nameEmail {
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 60px;
-  
 }
 
 .aboutName {
   display: flex;
   flex-direction: column;
-  gap:3px;
- 
+  gap: 3px;
 }
 .detailSectionName {
   color: #ffffff;
@@ -703,7 +700,6 @@ background-position:center;
 .nameField {
   font-weight: 400;
   font-size: 20px;
-  
 }
 
 .nameField input {
@@ -713,14 +709,11 @@ background-position:center;
 .lineName {
   border: 1px solid #ffffff;
   width: 280px;
- 
-
 }
-.aboutEmail{
+.aboutEmail {
   display: flex;
   flex-direction: column;
-  gap:3px;
-
+  gap: 3px;
 }
 .detailSectionMail {
   color: #ffffff;
@@ -728,9 +721,7 @@ background-position:center;
   font-size: 20px;
 }
 
-
 .emailField {
-
   font-weight: 400;
   font-size: 20px;
 }
@@ -741,28 +732,24 @@ background-position:center;
 .lineMail {
   border: 1px solid #ffffff;
   width: 280px;
-
 }
-.pNoMsg{
+.pNoMsg {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
-.aboutPNo{
+.aboutPNo {
   display: flex;
   flex-direction: column;
-  gap:3px;
+  gap: 3px;
 }
 .detailSectionPno {
-
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
 .numberField {
-
   font-weight: 400;
   font-size: 20px;
 }
@@ -774,21 +761,18 @@ background-position:center;
 .linePno {
   border: 1px solid #ffffff;
   width: 280px;
-
 }
-.aboutMsg{
+.aboutMsg {
   display: flex;
   flex-direction: column;
-  gap:3px;
+  gap: 3px;
 }
 .detailSectionMsg {
-
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
 }
 .messageField {
-
   font-weight: 400;
   font-size: 20px;
 }
@@ -800,7 +784,6 @@ background-position:center;
 .lineMessage {
   border: 1px solid #ffffff;
   width: 280px;
-
 }
 
 input[type="text"],
@@ -818,19 +801,15 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.btn-logo-ContactSection{
+.btn-logo-ContactSection {
   display: flex;
   justify-content: center;
   margin-top: 70px;
-  gap:50px;
+  gap: 50px;
   margin-left: 180px;
-
 }
 
-
-
 .btn-3 {
-  
   width: 190px;
   height: 60px;
   border-radius: 10px;
@@ -838,16 +817,15 @@ input::-webkit-inner-spin-button {
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
 
-.btn-3:hover{
+.btn-3:hover {
   cursor: pointer;
 }
 
-.twoLogos{
+.twoLogos {
   display: flex;
-  gap:30px;
+  gap: 30px;
 }
 .loadingLogo {
-
   background-image: url("../public/loader.svg");
   width: 50px;
   height: 70px;
@@ -856,7 +834,6 @@ input::-webkit-inner-spin-button {
 }
 
 .approvedLogo {
-
   background-image: url("../public/approved.svg");
   width: 50px;
   height: 70px;
@@ -1832,40 +1809,38 @@ input::-webkit-inner-spin-button {
   .contactBgImage {
     background-image: url("../public/final2.jpg");
     width: 100%;
-    height: 600px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 0px;
-    margin-top: 0px;
-    border-radius: 0px;
+    height: 100%;
+
+    background-position: top;
   }
 
   .contactTopHeading {
-    position: absolute;
-
-    top: 20px;
-    left: 15%; /* 20% for other screens*/
+    text-align: center;
 
     font-size: 30px;
   }
   .contactHeroHeading {
-    top: 80px;
-    left: 20%;
+    text-align: center;
 
     font-size: 15px;
   }
+  .cardContent {
+    margin-top: 50px;
+  }
 
+  .nameEmail {
+    margin-bottom: 50px;
+   
+  }
+
+  .aboutName {
+    gap: 3px;
+  }
   .detailSectionName {
-    top: 160px;
-    left: 30px;
-
     font-size: 16px;
   }
 
   .nameField {
-    top: 190px;
-    left: 30px;
-
     font-size: 16px;
   }
 
@@ -1876,70 +1851,64 @@ input::-webkit-inner-spin-button {
 
   .lineName {
     width: 130px;
-
-    top: 220px;
-    left: 30px;
+  }
+  .aboutEmail {
+    gap: 3px;
   }
 
   .detailSectionMail {
-    top: 160px;
-    left: 200px;
     font-size: 16px;
   }
+
   .emailField {
-    position: absolute;
-    top: 190px;
-    left: 200px;
-
     font-size: 16px;
   }
-
   .emailField input {
     font-size: 12px;
     width: 130px;
   }
+
   .lineMail {
     width: 130px;
+  }
+  .pNoMsg {
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    top: 220px;
-    left: 200px;
+  .aboutPNo {
+    gap: 3px;
   }
 
   .detailSectionPno {
-    top: 260px;
-    left: 30px;
-
     font-size: 16px;
   }
   .numberField {
-    top: 290px;
-    left: 30px;
-
     font-size: 16px;
   }
-
   .numberField input {
     font-size: 12px;
     width: 130px;
   }
 
   .linePno {
+    
     width: 130px;
-
-    top: 320px;
-    left: 30px;
   }
 
+  .aboutMsg {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
   .detailSectionMsg {
-    top: 260px;
-    left: 200px;
-
     font-size: 16px;
   }
-  .messageField {
-    top: 290px;
-    left: 200px;
 
+  .messageField {
+    font-weight: 400;
     font-size: 16px;
   }
 
@@ -1949,10 +1918,8 @@ input::-webkit-inner-spin-button {
   }
 
   .lineMessage {
+ 
     width: 130px;
-
-    top: 320px;
-    left: 200px;
   }
 
   input[type="text"],
@@ -1969,43 +1936,49 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
+
+  .btn-logo-ContactSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 50px;
+    margin-left: 50px;
+  }
   .btn-3 {
-    position: absolute;
-    top: 400px;
-    left: 110px;
+
     width: 150px;
     height: 45px;
     border-radius: 10px;
     background-color: #ffa90f;
   }
+  .twoLogos {
 
+    gap: 15px;
+  }
   .loadingLogo {
-    position: absolute;
-    bottom: 56px;
-    left: 800px;
-    background-image: url("../public/loader.svg");
-    width: 5%;
-    height: 7%;
+
+
+    width: 35px;
+    height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
-    display: none;
+  display: none;
   }
 
   .approvedLogo {
-    position: absolute;
-    bottom: 56px;
-    left: 880px;
-    background-image: url("../public/approved.svg");
-    width: 5%;
-    height: 7%;
+
+   
+    width: 35px;
+    height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
     display: none;
+   
   }
   .footer {
     color: #ffffff;
     height: 80vh;
-    width: 98vw;
+    width: 100vw;
   }
   .footerTravelLogo {
     text-align: center;
