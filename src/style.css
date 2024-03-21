@@ -104,7 +104,7 @@
   width: 98vw;
 }
 
-.leftArrowHero2 {
+.leftArrowHero {
   position: absolute;
   font-size: 100px;
   margin-right: 300px;
@@ -115,7 +115,7 @@
   top: 300px;
 }
 
-.rightArrowHero2 {
+.rightArrowHero {
   position: absolute;
   font-size: 100px;
   margin-left: 300px;
@@ -126,21 +126,6 @@
   top: 300px;
 }
 
-.leftArrowHero {
-  font-size: 100px;
-  margin-right: 300px;
-  cursor: pointer;
-  color: #ffa90f;
-  font-family: monospace;
-}
-
-.rightArrowHero {
-  font-size: 100px;
-  margin-left: 300px;
-  cursor: pointer;
-  color: #ffa90f;
-  font-family: monospace;
-}
 
 .btn-1 {
   width: 200px;
@@ -355,12 +340,14 @@
 
 .arrows {
   display: flex;
+  gap:100px;
   position: absolute;
-  bottom: 0px;
+  bottom: -20px;
+  align-self: center;
 }
 .leftArrowHiddenSection {
   color: #ffa90f;
-  width: 150px;
+  
   font-size: 70px;
 }
 .leftArrowHiddenSection:hover {
@@ -976,13 +963,13 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
 
-  .leftArrowHero2 {
+  .leftArrowHero {
 
  
     top: 400px;
   }
   
-  .rightArrowHero2 {
+  .rightArrowHero {
     top: 400px;
   }
   .btn-1 {
@@ -1105,20 +1092,20 @@ input::-webkit-inner-spin-button {
   .arrows {
     display: flex;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
   }
-  .leftarrow {
+  .leftArrowHiddenSection{
     color: #ffa90f;
     font-size: 80px;
-    font-family: Montserrat;
+    font-family:monospace;
   }
 
-  .rightarrow {
+  .rightArrowHiddenSection {
     color: #ffa90f;
 
     font-size: 80px;
-    font-family: Montserrat;
-    padding-left: 40px;
+    font-family: monospace;
+    
   }
 
   .trektopsection {
@@ -1210,7 +1197,7 @@ input::-webkit-inner-spin-button {
   .dot3 {
     height: 13%;
     top: 130px;
-    right: 200px;
+    right: 212px;
   }
 
   .dest03 {
@@ -1226,7 +1213,7 @@ input::-webkit-inner-spin-button {
   }
   .dot4 {
     height: 13%;
-    top: 277px;
+    top: 275px;
     right: 600px;
   }
 
@@ -1243,7 +1230,7 @@ input::-webkit-inner-spin-button {
   }
   .dot5 {
     height: 13%;
-    top: 276px;
+    top: 275px;
     left: 200px;
   }
 
@@ -1260,11 +1247,11 @@ input::-webkit-inner-spin-button {
   }
   .dot6 {
     height: 13%;
-    top: 535px;
+    top: 532px;
     left: 530px;
   }
   .dest06 {
-    bottom: -50px;
+    bottom: -60px;
     left: 520px;
     font-size: 20px;
   }
@@ -1277,10 +1264,10 @@ input::-webkit-inner-spin-button {
   .dot7 {
     height: 13%;
     right: 465px;
-    top: 535px;
+    top: 530px;
   }
   .dest07 {
-    bottom: -50px;
+    bottom: -55px;
     right: 420px;
     font-size: 20px;
   }
@@ -1577,7 +1564,7 @@ input::-webkit-inner-spin-button {
   .logos {
     height: 60px;
   }
-  .leftArrowHero2 {
+  .leftArrowHero {
     position: absolute;
     font-size: 60px;
     margin-right: 10px;
@@ -1586,7 +1573,7 @@ input::-webkit-inner-spin-button {
     top: 230px;
   }
 
-  .rightArrowHero2 {
+  .rightArrowHero {
     position: absolute;
     font-size: 60px;
     margin-left: 10px;
@@ -1595,17 +1582,6 @@ input::-webkit-inner-spin-button {
     top: 230px;
   }
 
-  .leftArrowHero {
-    font-size: 70px;
-    margin-right: 10px;
-    align-self: center;
-  }
-
-  .rightArrowHero {
-    font-size: 70px;
-    margin-left: 10px;
-    align-self: center;
-  }
 
   .NatureSectionOne {
     display: flex;
@@ -1736,11 +1712,11 @@ input::-webkit-inner-spin-button {
   .arrows {
     bottom: 10px;
   }
-  .leftarrow {
+  .leftArrowHiddenSection{
     font-family: monospace;
   }
 
-  .rightarrow {
+  .rightArrowHiddenSection {
     font-family: monospace;
   }
 

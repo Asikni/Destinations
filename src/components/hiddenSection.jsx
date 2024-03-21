@@ -32,8 +32,8 @@ function HiddenGems() {
         </p>
       </div>
       <div className="arrows">
-        <div className="leftarrow"> &lt; </div>
-        <div className="rightarrow">&gt;</div>
+        <div className="leftArrowHiddenSection "> &lt; </div>
+        <div className="rightArrowHiddenSection">&gt;</div>
       </div>
     </div>
   );

@@ -49,17 +49,17 @@ function HeroTwo({setIsOpen}) {
           </div>
         </div>
       </div>
-      <div className="leftArrowHero2" onClick={imageToTheLeft}>
+      <div className="leftArrowHero" onClick={imageToTheLeft}>
         {" "}
         &lt;{" "}
       </div>
-      <div className="rightArrowHero2" onClick={imageToTheRight}>
+      <div className="rightArrowHero" onClick={imageToTheRight}>
         {">"}
       </div>
       <div className="buttonsHeroSection">
-        {/* <Button btnClass={"btn-1"}>Find out more</Button> */}
+        
         {images[currentImageIndex].buttonOne}
-        {/* <Button btnClass={"btn-2"}> Contact Us </Button> */}
+       
         {images[currentImageIndex].showContactButton && (
         <Button btnClass={'btn-2'} onClick={() => setIsOpen(true)}>
           Contact Us
