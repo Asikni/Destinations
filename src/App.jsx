@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Hero from "./components/heroSection";
+// import Hero from "./components/heroSection";
 import Treks from "./components/trekSection";
 import NatureComp from "./components/natureComponent";
 import HiddenGems from "./components/hiddenSection";
