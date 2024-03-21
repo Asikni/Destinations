@@ -5,8 +5,11 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
-}
 
+}
+input{
+  outline: none;
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -676,6 +679,7 @@
 }
 .cardContent {
   margin-top: 50px;
+  
 }
 .nameEmail {
   display: flex;

@@ -6,14 +6,14 @@ const MODAL_STYLES = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "100%", // Adjust the width of the modal as needed
-  maxWidth: "100%", // Set a maximum width for responsiveness
-  maxHeight: "100%", // Set a maximum height for responsiveness
-  overflow: "auto", // Enable scrolling if content exceeds modal size
-  zIndex: 1000,
+  width: "100%", 
+  maxWidth: "100%", 
+  maxHeight: "100%", 
+  overflow: "auto", 
+  zIndex: 2,
   backgroundColor: "#1E2126",
-  padding: "20px", // Add some padding for content spacing
-  borderRadius: "10px", // Add rounded corners for aesthetic
+  padding: "20px",
+  borderRadius: "10px", 
 
 };
 
@@ -24,7 +24,7 @@ const OVERLAY_STYLES = {
   right: 0,
   bottom: 0,
   backgroundColor: "rgba(0, 0, 0, .7)",
-  zIndex: 1000,
+  zIndex: 2,
 };
 
 export default function Modal({ open, children, onClose }) {
