@@ -861,21 +861,26 @@ input::-webkit-inner-spin-button {
   height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: isapproved .5s linear;
+  animation: isapproved 1s ease-in-out;
 }
 
 @keyframes isapproved {
   0% {
-    width: 0px;
+    
+    opacity: 0; /* Start with opacity 0 for a fade-in effect */
   }
 
   50% {
-    width: 25px;
+   
+    opacity: 0.5; /* Increase opacity gradually */
   }
+
   100% {
-    width: 50px;
+   
+    opacity: 1; /* Fully visible at the end */
   }
 }
+
 .footerTravelLogo {
   text-align: center;
   padding-top: 100px;

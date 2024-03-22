@@ -178,7 +178,7 @@ function Contact() {
           <div className="twoLogos">
             {isLoading ? <div className="loadingLogo"></div> : null}
             {isconfirmed
-              ? <div className="approvedLogo"></div> 
+              ? <div className="approvedLogo"> </div> 
               : null}
             
 
