@@ -211,7 +211,6 @@ input {
   flex-direction: column;
   align-items: center;
   width: 100%;
-
 }
 .description {
   width: 90%;
@@ -835,6 +834,25 @@ input::-webkit-inner-spin-button {
   height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
+  animation: logoRotate 5s;
+}
+
+@keyframes logoRotate {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: 270deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 
 .approvedLogo {
@@ -843,6 +861,20 @@ input::-webkit-inner-spin-button {
   height: 70px;
   background-size: contain;
   background-repeat: no-repeat;
+  animation: isapproved .5s linear;
+}
+
+@keyframes isapproved {
+  0% {
+    width: 0px;
+  }
+
+  50% {
+    width: 25px;
+  }
+  100% {
+    width: 50px;
+  }
 }
 .footerTravelLogo {
   text-align: center;
@@ -2176,10 +2208,8 @@ input::-webkit-inner-spin-button {
     }
 
     .natureimages {
-
       width: 50%;
       height: 70%;
-
     }
   }
 }

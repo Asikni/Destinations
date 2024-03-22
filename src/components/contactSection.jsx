@@ -9,20 +9,55 @@ function Contact() {
   const [emailchange, setEmailChange] = useState("");
   const [numberchange, setNumberChange] = useState("");
   const [messagechange, setMessageChange] = useState("");
-  const handleClick = () => {
-    const formData = {
-      name: namechange.length > 0 ? namechange : "Nothing to display here.",
+  const [isLoading, setIsLoading] = useState(false);
+  const [isconfirmed, setIsConfirmed] = useState(false);
+  // const handleClick = () => {
+  //   const formData = {
+  //     name: namechange.length > 0 ? namechange : "Nothing to display here.",
 
-      email: emailchange.length > 0 ? emailchange : "Nothing to display here.",
-      number:
-        numberchange.length > 0 ? numberchange : "Nothing to display here.",
-      message:
-        messagechange.length > 0 ? messagechange : "Nothing to display here.",
+  //     email: emailchange.length > 0 ? emailchange : "Nothing to display here.",
+  //     number:
+  //       numberchange.length > 0 ? numberchange : "Nothing to display here.",
+  //     message:
+  //       messagechange.length > 0 ? messagechange : "Nothing to display here.",
+  //   };
+
+  //   console.log("Form Data:", formData);
+  // };
+
+  const handleOnSubmit = async () => {
+    setIsLoading(true);
+
+    const data = {
+      name: namechange,
+      email: emailchange,
+      number: numberchange,
+      message: messagechange,
     };
 
-    // Logging the form data
-    console.log("Form Data:", formData);
+    try {
+      const response = await fetch("https://eo4medv2840tuh0.m.pipedream.net", {
+        method: "POST",
+        body: JSON.stringify(data), //check this out
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (response.status == 200) {
+        console.log("Request succesfully sent....");
+      }
+    } catch (e) {
+      console.log("Something went wrong");
+    } finally {
+      setIsLoading(false);
+      setIsConfirmed(true);
+      setTimeout(() => {
+        setIsConfirmed(false);
+
+      }, 3000)
+    }
   };
+
   const debouncedHandleNameChange = debounce((value) => {
     setNameChange(value);
   }, 500); //set the value after .5s
@@ -73,7 +108,6 @@ function Contact() {
     <div
       style={{
         backgroundColor: "#1E2126",
-      
       }}
     >
       <div className="contactBgImage">
@@ -133,13 +167,21 @@ function Contact() {
         </div>
         <div className="btn-logo-ContactSection">
           <div className="buttonContactSection">
-            <Button btnClass={"btn-3"} onClick={handleClick}>
+            <Button
+              btnClass={"btn-3"}
+              onClick={handleOnSubmit}
+              disabled={isLoading}
+            >
               Submit
             </Button>
           </div>
           <div className="twoLogos">
-            <div className="loadingLogo"></div>
-            <div className="approvedLogo"></div>
+            {isLoading ? <div className="loadingLogo"></div> : null}
+            {isconfirmed
+              ? <div className="approvedLogo"></div> 
+              : null}
+            
+
           </div>
         </div>
       </div>
