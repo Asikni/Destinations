@@ -73,7 +73,7 @@ function Contact() {
     <div
       style={{
         backgroundColor: "#1E2126",
-        height: "100vh",
+      
       }}
     >
       <div className="contactBgImage">

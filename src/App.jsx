@@ -15,17 +15,17 @@ function App() {
   return (
     <div>
      
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+        {/* <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <Contact />
-        </Modal>
+        </Modal> */}
       <HeroTwo setIsOpen={setIsOpen}/>
       {/* <Hero /> */}
-      <NatureComp />
+      {/* <NatureComp />
       <HiddenGems />
       <Treks />
-      <StoriesSection />
+      <StoriesSection /> */}
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

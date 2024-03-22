@@ -5,9 +5,8 @@
   padding: 0;
   font-family: Poppins;
   font-weight: 500;
-
 }
-input{
+input {
   outline: none;
 }
 .header {
@@ -129,7 +128,6 @@ input{
   top: 300px;
 }
 
-
 .btn-1 {
   width: 200px;
   height: 60px;
@@ -154,7 +152,7 @@ input{
 }
 
 .btn-1:hover,
-.btn-2:hover{
+.btn-2:hover {
   cursor: pointer;
 }
 .logoSideHeading {
@@ -343,14 +341,14 @@ input{
 
 .arrows {
   display: flex;
-  gap:100px;
+  gap: 100px;
   position: absolute;
   bottom: -20px;
   align-self: center;
 }
 .leftArrowHiddenSection {
   color: #ffa90f;
-  
+
   font-size: 70px;
 }
 .leftArrowHiddenSection:hover {
@@ -652,8 +650,8 @@ input{
 }
 .contactBgImage {
   background-image: url("../public/Rectangle 16.svg");
-  width: 60%;
-  height: 100%;
+  width: 50rem;
+  height: 35rem;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -679,7 +677,6 @@ input{
 }
 .cardContent {
   margin-top: 50px;
-  
 }
 .nameEmail {
   display: flex;
@@ -968,11 +965,9 @@ input::-webkit-inner-spin-button {
   }
 
   .leftArrowHero {
-
- 
     top: 400px;
   }
-  
+
   .rightArrowHero {
     top: 400px;
   }
@@ -988,19 +983,14 @@ input::-webkit-inner-spin-button {
   }
 
   .logoSideHeading {
-
-  
     margin-top: 550px;
     gap: 100px;
   }
-  
-  .logos {
 
+  .logos {
     height: 120px;
-   
   }
   .side-heading {
-
     font-size: 25px;
   }
   .Nature {
@@ -1098,10 +1088,10 @@ input::-webkit-inner-spin-button {
     position: absolute;
     bottom: 0px;
   }
-  .leftArrowHiddenSection{
+  .leftArrowHiddenSection {
     color: #ffa90f;
     font-size: 80px;
-    font-family:monospace;
+    font-family: monospace;
   }
 
   .rightArrowHiddenSection {
@@ -1109,7 +1099,6 @@ input::-webkit-inner-spin-button {
 
     font-size: 80px;
     font-family: monospace;
-    
   }
 
   .trektopsection {
@@ -1317,7 +1306,10 @@ input::-webkit-inner-spin-button {
     font-size: 120px;
     margin-left: 300px;
   }
-
+  .contactBgImage {
+    width: 70rem;
+    height: 60rem;
+  }
   .contactTopHeading {
     padding-top: 130px;
     font-size: 60px;
@@ -1332,8 +1324,6 @@ input::-webkit-inner-spin-button {
   }
 
   .nameEmail {
- 
-
     margin-bottom: 100px;
   }
 
@@ -1357,16 +1347,12 @@ input::-webkit-inner-spin-button {
   }
 
   .aboutEmail {
-
     gap: 3px;
   }
   .detailSectionMail {
-
-
     font-size: 25px;
   }
   .emailField {
- 
     font-weight: 400;
     font-size: 20px;
   }
@@ -1376,17 +1362,13 @@ input::-webkit-inner-spin-button {
   }
   .lineMail {
     width: 400px;
-
-
   }
 
   .detailSectionPno {
-
     font-size: 25px;
   }
 
   .numberField {
-
     font-weight: 400;
     font-size: 20px;
   }
@@ -1398,12 +1380,9 @@ input::-webkit-inner-spin-button {
     width: 400px;
   }
   .detailSectionMsg {
-
-
     font-size: 25px;
   }
   .messageField {
-   
     font-weight: 400;
     font-size: 20px;
   }
@@ -1413,17 +1392,13 @@ input::-webkit-inner-spin-button {
   }
   .lineMessage {
     width: 400px;
-
-
   }
   .btn-logo-ContactSection {
-
     margin-top: 100px;
     gap: 80px;
     margin-left: 250px;
   }
   .btn-3 {
-
     width: 230px;
     height: 81px;
     font-size: 21px;
@@ -1434,10 +1409,8 @@ input::-webkit-inner-spin-button {
     gap: 60px;
   }
   .loadingLogo {
-
     width: 60px;
     height: 70px;
- 
   }
   .approvedLogo {
     width: 60px;
@@ -1586,7 +1559,6 @@ input::-webkit-inner-spin-button {
     top: 230px;
   }
 
-
   .NatureSectionOne {
     display: flex;
     flex-direction: column;
@@ -1716,7 +1688,7 @@ input::-webkit-inner-spin-button {
   .arrows {
     bottom: 10px;
   }
-  .leftArrowHiddenSection{
+  .leftArrowHiddenSection {
     font-family: monospace;
   }
 
@@ -2184,6 +2156,15 @@ input::-webkit-inner-spin-button {
         top: 480px;
         left: 60px;
       }
+    }
+  }
+
+  @media only screen and (min-width: 767px) {
+    .contactBgImage {
+      width: 50rem;
+      height: 50rem;
+
+      background-position: top;
     }
   }
 }
