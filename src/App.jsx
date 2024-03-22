@@ -20,12 +20,12 @@ function App() {
         </Modal> */}
       <HeroTwo setIsOpen={setIsOpen}/>
       {/* <Hero /> */}
-      {/* <NatureComp />
-      <HiddenGems />
+      <NatureComp />
+      {/* <HiddenGems />
       <Treks />
       <StoriesSection /> */}
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

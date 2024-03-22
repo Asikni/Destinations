@@ -159,10 +159,12 @@ input {
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-
-  margin-top: 350px;
+  align-items: center;
+  justify-content: center;
   gap: 80px;
+  top: min(100%, calc(100vh - 50%));
+  left: 0;
+  margin-left: 0vw;
 }
 
 .logos {
@@ -197,6 +199,7 @@ input {
 
 .natureDescription {
   width: 50%;
+  border: 1px solid green;
 }
 .NatureSectionOne {
   display: flex;
@@ -207,10 +210,12 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
 }
 .description {
-  width: 550px;
-  height: 350px;
+  width: 90%;
+  /* height: 10%; */
   font-size: 18px;
   font-weight: 500;
   text-align: justify;
@@ -981,10 +986,11 @@ input::-webkit-inner-spin-button {
     height: 80px;
     font-size: 21px;
   }
-
   .logoSideHeading {
-    margin-top: 550px;
-    gap: 100px;
+    gap: 80px;
+    top: min(100%, calc(100vh - 50%));
+    left: 0;
+    margin-left: 0vw;
   }
 
   .logos {
@@ -1533,10 +1539,9 @@ input::-webkit-inner-spin-button {
     margin-left: 0px;
   }
   .logoSideHeading {
-    margin-top: 400px;
-    gap: 80px;
-    align-content: flex-start;
-    margin-left: -30px;
+    top: min(55%, calc(100vh - 30%));
+    left: 0;
+    margin-left: -8vw;
   }
   .logos {
     height: 60px;
@@ -1984,7 +1989,7 @@ input::-webkit-inner-spin-button {
   }
   .footer {
     color: #ffffff;
-    height: 80vh;
+
     width: 100vw;
   }
   .footerTravelLogo {
@@ -2071,9 +2076,7 @@ input::-webkit-inner-spin-button {
 
       bottom: 37%;
     }
-    .footer {
-      height: 100vh;
-    }
+
     .destinationDetails {
       top: 380px;
       left: 40px;
@@ -2090,6 +2093,12 @@ input::-webkit-inner-spin-button {
 
     .rightArrowHero {
       margin-left: 25px;
+    }
+
+    .logoSideHeading {
+      top: min(55%, calc(100vh - 30%));
+
+      margin-left: -5vw;
     }
     .carouselImageFour {
       bottom: 35%;
@@ -2143,7 +2152,6 @@ input::-webkit-inner-spin-button {
       height: 50px;
     }
     .footer {
-      height: 100vh;
       background-position: 80% 0%;
     }
 
@@ -2159,12 +2167,19 @@ input::-webkit-inner-spin-button {
     }
   }
 
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .contactBgImage {
       width: 50rem;
       height: 50rem;
 
       background-position: top;
+    }
+
+    .natureimages {
+
+      width: 50%;
+      height: 70%;
+
     }
   }
 }

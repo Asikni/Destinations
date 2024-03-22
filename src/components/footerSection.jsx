@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div className="footer" style={{  }}>
-      <div className="footerTravelLogo" style={{}}>
+    <div className="footer">
+      <div className="footerTravelLogo" >
         <img src="thirdLogoImage.svg" alt="logo" />
       </div>
 
