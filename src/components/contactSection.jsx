@@ -29,13 +29,14 @@ function Contact() {
     setIsLoading(true);
 
     const data = {
-      name: namechange,
+      name: namechange ,
       email: emailchange,
       number: numberchange,
       message: messagechange,
     };
 
     try {
+      if ((namechange.length && emailchange.length && numberchange.length && messagechange.length) > 0 ){ 
       const response = await fetch("https://eo4medv2840tuh0.m.pipedream.net", {
         method: "POST",
         body: JSON.stringify(data), //check this out
@@ -45,12 +46,15 @@ function Contact() {
       });
       if (response.status == 200) {
         console.log("Request succesfully sent....");
+      }}else {
+        alert("Can't leave a field empty")
       }
     } catch (e) {
       console.log("Something went wrong");
     } finally {
       setIsLoading(false);
-      setIsConfirmed(true);
+
+      (namechange.length && emailchange.length && numberchange.length && messagechange.length) > 0 ? setIsConfirmed(true) : setIsConfirmed(false);
       setTimeout(() => {
         setIsConfirmed(false);
 
@@ -60,19 +64,19 @@ function Contact() {
 
   const debouncedHandleNameChange = debounce((value) => {
     setNameChange(value);
-  }, 500); //set the value after .5s
+  }, 200); //set the value after .5s
 
   const debouncedHandleEmailChange = debounce((value) => {
     setEmailChange(value);
-  }, 500);
+  }, 200);
 
   const debouncedHandleNumberChange = debounce((value) => {
     setNumberChange(value);
-  }, 500);
+  }, 200);
 
   const debouncedHandleMessageChange = debounce((value) => {
     setMessageChange(value);
-  }, 500);
+  }, 200);
 
   const handleNameChange = (event) => {
     debouncedHandleNameChange(event.target.value);
