@@ -186,10 +186,10 @@ input {
   color: #ffa90f;
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 55px;
   padding: 0px 55px;
-  margin-top: 50px;
-  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .natureHeading {
@@ -199,12 +199,12 @@ input {
 
 .natureDescription {
   width: 50%;
-  border: 1px solid green;
 }
 .NatureSectionOne {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 100px;
 }
 .natureHeadingDescription {
   display: flex;
@@ -223,7 +223,7 @@ input {
 .natureimages {
   background-image: url("../public/Rectangle 197.png");
   width: 50%;
-  height: 90%;
+  height: 35rem;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0px 50%;
@@ -240,11 +240,9 @@ input {
   font-size: 50px;
   font-weight: 700;
   font-family: Montserrat;
-  position: absolute;
-  top: 45px;
 }
 
-.destinationDetails {
+/* .destinationDetails {
   position: absolute;
   z-index: 2;
   display: flex;
@@ -282,73 +280,91 @@ input {
   font-weight: 500;
   font-size: 18px;
   padding-left: 5px;
-}
+} */
+.imageOneFive {
 
+  height: 42%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  position: absolute;
+  padding-top: 70px;
+}
 .carouselImageOne {
   background-image: url("../public/hiddenimageone.svg");
-  width: 50%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
-  position: absolute;
-  bottom: 160px;
-  left: 230px;
-}
 
+}
+.imageTwoFour {
+
+  height: 50%;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  padding-top: 40px;
+}
 .carouselImageTwo {
   background-image: url("../public/hiddenimagetwo.jpg");
-  width: 20%;
-  height: 50%;
+  width: 50%;
+  height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
-  position: absolute;
-  bottom: 130px;
-  left: 300px;
-}
 
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+
+
+}
 .carouselImageThree {
+
   background-image: url("../public/hiddenimagethree.svg");
-  width: 37%;
+  width: 40%;
   height: 60%;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 5;
   position: absolute;
-  bottom: 100px;
-  left: 30%;
+  background-position: center;
+
+
 }
 .carouselImageFour {
+  
   background-image: url("../public/hiddenimagefour.jpg");
-  width: 50%;
-  height: 50%;
-  background-size: contain;
+  width: 80%;
+  height: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-  position: absolute;
-  bottom: 130px;
-  right: 130px;
 }
 
 .carouselImageFive {
   background-image: url("../public/hiddenimagefive.jpg");
-  width: 25%;
-  height: 40%;
-  background-size: contain;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
-  position: absolute;
-  bottom: 160px;
-  right: 275px;
-}
+
+} 
 
 .arrows {
   display: flex;
   gap: 100px;
-  position: absolute;
-  bottom: -20px;
   align-self: center;
+ 
+
 }
 .leftArrowHiddenSection {
   color: #ffa90f;
@@ -866,17 +882,14 @@ input::-webkit-inner-spin-button {
 
 @keyframes isapproved {
   0% {
-    
     opacity: 0; /* Start with opacity 0 for a fade-in effect */
   }
 
   50% {
-   
     opacity: 0.5; /* Increase opacity gradually */
   }
 
   100% {
-   
     opacity: 1; /* Fully visible at the end */
   }
 }
@@ -1037,9 +1050,9 @@ input::-webkit-inner-spin-button {
     font-size: 25px;
   }
   .Nature {
-    padding: 0px 100px;
-    margin-top: 70px;
-    margin-bottom: 80px;
+    padding: 0px 55px;
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
   .natureHeading {
     font-weight: bold;
@@ -1059,6 +1072,7 @@ input::-webkit-inner-spin-button {
 
   .natureimages {
     background-size: cover;
+    height: 55rem;
   }
   .hiddenText {
     font-size: 80px;
@@ -1517,8 +1531,74 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .header {
+    justify-content: space-between;
+  }
+  .summerLogo {
+    width: 20%;
+  }
+  .travelLogo {
+    width: 15%;
+  }
+  .winterLogo {
+    width: 15%;
+  }
 
-@media only screen and (max-width: 768px) {
+  .top-heading {
+    padding-top: 70px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .main-heading {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .buttonsHeroSection {
+    padding-top: 80px;
+  }
+  .logoSideHeading {
+    top: min(50%, calc(70vh - 30%));
+    left: 0;
+    margin-left: 0vw;
+  }
+
+  .leftArrowHero {
+    position: absolute;
+    font-size: 60px;
+    margin-right: 10px;
+
+    left: 2px;
+    top: 230px;
+  }
+
+  .rightArrowHero {
+    position: absolute;
+    font-size: 60px;
+    margin-left: 10px;
+
+    right: 2px;
+    top: 230px;
+  }
+  .Nature {
+    font-size: 45px;
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+  }
+
+  .description {
+    width: 90%;
+    font-size: 16px;
+  }
+  .natureimages {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .hero {
     background-position: 70% 0%;
   }
@@ -1636,7 +1716,7 @@ input::-webkit-inner-spin-button {
   }
   .natureimages {
     width: 97%;
-    height: 50%;
+    height: 15rem;
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 12px;
@@ -1648,54 +1728,44 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     text-align: center;
   }
+  .imageTwoFour {
 
+    height: 30%;
+    width: 100%;
+    
+    justify-content: space-between;
+
+    padding-top: 75px;
+  }
   .carouselImageOne {
-    /* background-image: url("../public/Rectangle 200.svg");
-    width: 50%;
-    height: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 0;
-    position: absolute;
-    bottom: 190px;
-    left: 230px; */
     display: none;
   }
 
   .carouselImageTwo {
     width: 50%;
-    height: 25%;
-    background-size: contain;
+    height: 100%;
 
-    bottom: 280px;
-    left: 0px;
+  
   }
 
   .carouselImageThree {
+
+    
     width: 80%;
     height: 50%;
-    background-size: contain;
-    bottom: 130px;
-    left: 10%;
+
+  
+  
   }
   .carouselImageFour {
-    width: 70%;
-    height: 25%;
-    background-size: contain;
-    bottom: 40%;
-    right: 0px;
+  
+    
+    width: 50%;
+
   }
 
   .carouselImageFive {
-    /* background-image: url("../public/hiddenimagefive.jpg");
-    width: 50%;
-    height: 40%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 0;
-    position: absolute;
-    bottom: 190px;
-    right: -190px; */
+
     display: none;
   }
 
@@ -1869,7 +1939,6 @@ input::-webkit-inner-spin-button {
   .contactBgImage {
     background-image: url("../public/final2.jpg");
     width: 100%;
-    height: 100%;
 
     background-position: top;
   }
@@ -2014,7 +2083,6 @@ input::-webkit-inner-spin-button {
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
-    display: none;
   }
 
   .approvedLogo {
@@ -2022,12 +2090,9 @@ input::-webkit-inner-spin-button {
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
-    display: none;
   }
   .footer {
     color: #ffffff;
-
-    width: 100vw;
   }
   .footerTravelLogo {
     text-align: center;
@@ -2153,7 +2218,7 @@ input::-webkit-inner-spin-button {
 
     .contactBgImage {
       width: 100%;
-      height: 600px;
+      height: 40rem;
     }
     .contactTopHeading {
       left: 20%;
@@ -2190,6 +2255,7 @@ input::-webkit-inner-spin-button {
     }
     .footer {
       background-position: 80% 0%;
+      height: 90vh;
     }
 
     .destinationDetails {
@@ -2201,20 +2267,6 @@ input::-webkit-inner-spin-button {
         top: 480px;
         left: 60px;
       }
-    }
-  }
-
-  @media only screen and (min-width: 768px) {
-    .contactBgImage {
-      width: 50rem;
-      height: 50rem;
-
-      background-position: top;
-    }
-
-    .natureimages {
-      width: 50%;
-      height: 70%;
     }
   }
 }

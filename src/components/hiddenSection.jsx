@@ -4,21 +4,27 @@ function HiddenGems() {
       className="hiddenSection"
       style={{
         backgroundColor: "#1E2126",
-        height: "100vh",
-       
-        position: "relative",
-        
       }}
     >
       <div className="hiddenText">Discover Hidden Gems</div>
-      <div className="carousel" >
-        <div className="carouselImageOne"></div>
-        <div className="carouselImageTwo"></div>
+
+      <div className="carousel" style={{ height: "60vh", width: "50vw" }}>
+        
+        
         <div className="carouselImageThree"></div>
-        <div className="carouselImageFour"></div>
+    
+        <div
+          className="imageTwoFour"
+        >
+          <div className="carouselImageTwo"></div>
+          <div className="carouselImageFour"></div>
+        </div>
+        <div className="imageOneFive">
+        <div className="carouselImageOne"></div>
         <div className="carouselImageFive"></div>
+        </div>
       </div>
-      <div className="destinationDetails" >
+      {/* <div className="destinationDetails" >
         <p className="destinationName" >Sonmarg</p>
         <p className="Details">
           <div style={{display:"flex"}}>
@@ -30,7 +36,7 @@ function HiddenGems() {
           <p className="moneyDetails">4.2k</p>
           </div>
         </p>
-      </div>
+      </div> */}
       <div className="arrows">
         <div className="leftArrowHiddenSection "> &lt; </div>
         <div className="rightArrowHiddenSection">&gt;</div>

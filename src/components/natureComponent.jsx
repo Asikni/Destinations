@@ -1,15 +1,14 @@
 function NatureComp() {
   return (
     <div
-      className="NatureSectionOne"
+      
       style={{
         backgroundColor: "#1E2126",
-        height: "100vh",
-       
-       
-       
+    
+
       }}
     >
+      <div className="NatureSectionOne" style={{width:"100vw"}}>
       <div className="natureimages" ></div>
       <div
         className="natureDescription"
@@ -35,6 +34,7 @@ function NatureComp() {
           love. Enclosed by the Himalayas and Karakoram ranges;.
         </div>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -37,6 +37,7 @@ function HeroTwo({setIsOpen}) {
       className="hero"
       style={{
         backgroundImage: `url(${images[currentImageIndex][currentImageIndex]})`,
+
       }}
     >
       <Header />

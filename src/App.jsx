@@ -21,11 +21,11 @@ function App() {
       <HeroTwo setIsOpen={setIsOpen}/>
       {/* <Hero /> */}
       <NatureComp />
-      {/* <HiddenGems />
-      <Treks />
-      <StoriesSection /> */}
+      <HiddenGems />
+      {/* <Treks />
+      <StoriesSection />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

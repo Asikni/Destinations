@@ -58,7 +58,7 @@ function Contact() {
       setTimeout(() => {
         setIsConfirmed(false);
 
-      }, 3000)
+      }, 2500)
     }
   };
 
