@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 // import Hero from "./components/heroSection";
 import Treks from "./components/trekSection";
 import NatureComp from "./components/natureComponent";
@@ -9,23 +9,21 @@ import Footer from "./components/footerSection";
 import HeroTwo from "./components/HeroSectiontwo";
 import Modal from "./modal";
 
-
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-     
-        {/* <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+      {/* <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <Contact />
         </Modal> */}
-      <HeroTwo setIsOpen={setIsOpen}/>
+      <HeroTwo setIsOpen={setIsOpen} />
       {/* <Hero /> */}
       <NatureComp />
       <HiddenGems />
-      {/* <Treks />
+      <Treks />
       <StoriesSection />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

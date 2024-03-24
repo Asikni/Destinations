@@ -64,7 +64,7 @@ function Contact() {
 
   const debouncedHandleNameChange = debounce((value) => {
     setNameChange(value);
-  }, 200); //set the value after .5s
+  }, 1000); //set the value after .5s
 
   const debouncedHandleEmailChange = debounce((value) => {
     setEmailChange(value);

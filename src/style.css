@@ -282,7 +282,6 @@ input {
   padding-left: 5px;
 } */
 .imageOneFive {
-
   height: 42%;
   width: 65%;
   display: flex;
@@ -298,10 +297,8 @@ input {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
-
 }
 .imageTwoFour {
-
   height: 50%;
   width: 55%;
   display: flex;
@@ -317,17 +314,13 @@ input {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
-
 }
 .carousel {
   display: flex;
   justify-content: center;
   padding-top: 50px;
-
-
 }
 .carouselImageThree {
-
   background-image: url("../public/hiddenimagethree.svg");
   width: 40%;
   height: 60%;
@@ -336,11 +329,8 @@ input {
   z-index: 5;
   position: absolute;
   background-position: center;
-
-
 }
 .carouselImageFour {
-  
   background-image: url("../public/hiddenimagefour.jpg");
   width: 80%;
   height: 100%;
@@ -356,15 +346,12 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
-
-} 
+}
 
 .arrows {
   display: flex;
   gap: 100px;
   align-self: center;
- 
-
 }
 .leftArrowHiddenSection {
   color: #ffa90f;
@@ -1729,10 +1716,9 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
   .imageTwoFour {
-
     height: 30%;
     width: 100%;
-    
+
     justify-content: space-between;
 
     padding-top: 75px;
@@ -1744,28 +1730,17 @@ input::-webkit-inner-spin-button {
   .carouselImageTwo {
     width: 50%;
     height: 100%;
-
-  
   }
 
   .carouselImageThree {
-
-    
     width: 80%;
     height: 50%;
-
-  
-  
   }
   .carouselImageFour {
-  
-    
     width: 50%;
-
   }
 
   .carouselImageFive {
-
     display: none;
   }
 
@@ -2165,19 +2140,15 @@ input::-webkit-inner-spin-button {
 
     font-size: 35px;
   }
-  @media only screen and (width: 375px) {
-    .carouselImageFour {
-      width: 65%;
+  @media only screen and (min-width: 350px) {
 
-      bottom: 38%;
-      right: -2px;
-    }
+
 
     .carouselImageTwo {
-      height: 25%;
-
-      bottom: 37%;
+      width: 50%;
+      height: 100%;
     }
+
 
     .destinationDetails {
       top: 380px;
@@ -2202,18 +2173,22 @@ input::-webkit-inner-spin-button {
 
       margin-left: -5vw;
     }
+    .imageTwoFour {
+      height: 30%;
+      width: 100%;
+
+      justify-content: space-between;
+
+      padding-top: 120px;
+    }
     .carouselImageFour {
-      bottom: 35%;
-      right: 0px;
+      width: 40%;
+      height: 80%;
     }
 
     .carouselImageTwo {
-      width: 50%;
-      height: 22%;
-      background-size: contain;
-
-      bottom: 38%;
-      left: 0px;
+      width: 40%;
+      height: 80%;
     }
 
     .contactBgImage {
