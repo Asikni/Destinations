@@ -43,7 +43,7 @@ function Treks() {
           </div>
         </div>
         <div className="time" style={{ display: "flex", alignItems: "center" }}>
-          <div className="timelogo"> </div>
+          <div className="timelogo"></div>
           <div className="timeDuration" >
             Duration: 
             <div><span> 8 days</span></div>

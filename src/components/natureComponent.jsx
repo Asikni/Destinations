@@ -4,11 +4,11 @@ function NatureComp() {
       
       style={{
         backgroundColor: "#1E2126",
-    
 
       }}
     >
-      <div className="NatureSectionOne" style={{width:"100vw"}}>
+      <div className="NatureSectionOne" >
+        
       <div className="natureimages" ></div>
       <div
         className="natureDescription"

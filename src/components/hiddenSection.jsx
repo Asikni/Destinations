@@ -4,24 +4,22 @@ function HiddenGems() {
       className="hiddenSection"
       style={{
         backgroundColor: "#1E2126",
+        
       }}
     >
       <div className="hiddenText">Discover Hidden Gems</div>
 
-      <div className="carousel" style={{ height: "60vh", width: "50vw" }}>
-        
-        
+      <div className="carousel">
+
         <div className="carouselImageThree"></div>
-    
-        <div
-          className="imageTwoFour"
-        >
+
+        <div className="imageTwoFour">
           <div className="carouselImageTwo"></div>
           <div className="carouselImageFour"></div>
         </div>
         <div className="imageOneFive">
-        <div className="carouselImageOne"></div>
-        <div className="carouselImageFive"></div>
+          <div className="carouselImageOne"></div>
+          <div className="carouselImageFive"></div>
         </div>
       </div>
       {/* <div className="destinationDetails" >
