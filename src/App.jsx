@@ -20,10 +20,10 @@ function App() {
       {/* <Hero /> */}
       <NatureComp />
       <HiddenGems />
-      {/* <Treks />
+      <Treks />
       <StoriesSection />
-      <Contact /> */}
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }

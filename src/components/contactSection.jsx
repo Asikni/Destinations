@@ -112,8 +112,10 @@ function Contact() {
     <div
       style={{
         backgroundColor: "#1E2126",
+   
       }}
     >
+      <div className="contactSection">
       <div className="contactBgImage">
         <div className="contactTopHeading">Contact with Us</div>
         <div className="contactHeroHeading">
@@ -188,6 +190,7 @@ function Contact() {
 
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
