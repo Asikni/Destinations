@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 // import Hero from "./components/heroSection";
 import Treks from "./components/trekSection";
 import NatureComp from "./components/natureComponent";
@@ -13,9 +13,9 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      {/* <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <Contact />
-        </Modal> */}
+      </Modal>
       <HeroTwo setIsOpen={setIsOpen} />
       {/* <Hero /> */}
       <NatureComp />

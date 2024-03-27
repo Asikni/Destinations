@@ -138,6 +138,7 @@ input {
   font-weight: 500;
   font-size: 15px;
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border: 1px solid #ffa90f;
 }
 
 .btn-2 {
@@ -150,11 +151,16 @@ input {
   font-weight: 500;
   font-size: 15px;
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 .btn-1:hover,
 .btn-2:hover {
   cursor: pointer;
+  font-size: 17px;
+  height: 65px;
+  /* width: 205px; */
+  opacity: 0.9;
 }
 .logoSideHeading {
   position: absolute;
@@ -286,7 +292,6 @@ input {
   display: flex;
   justify-content: center;
   padding-top: 50px;
-  border: 1px solid red;
 
   height: 60vh;
   width: 50vw;
@@ -355,10 +360,10 @@ input {
 }
 
 .arrows {
+  margin-top: 30px;
   display: flex;
   gap: 100px;
   align-self: center;
-  border: 1px solid red;
 }
 .leftArrowHiddenSection {
   color: #ffa90f;
@@ -382,7 +387,7 @@ input {
   flex-direction: row;
   justify-content: center;
 
-  padding-top: 80px;
+  padding-top: 180px;
 }
 
 .number7 {
@@ -848,10 +853,15 @@ input::-webkit-inner-spin-button {
   border-radius: 10px;
   background-color: #ffa90f;
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border: 1px solid #ffa90f;
 }
 
 .btn-3:hover {
   cursor: pointer;
+  font-size: 17px;
+  height: 65px;
+  /* width: 205px; */
+  opacity: 0.9;
 }
 
 .twoLogos {
@@ -990,16 +1000,55 @@ input::-webkit-inner-spin-button {
 
   right: 2%;
   width: 2%;
-  height: 6%;
+
 
   background-color: #1e2126;
   color: #ffffff;
   font-size: 35px;
   border: none;
+  animation: rotateCross 2s linear;
 }
-
+@keyframes rotateCross {
+  0% {
+    rotate: 0deg;
+    font-size: 43px;
+  }
+  12.5% {
+    rotate: 90deg;
+    font-size: 42px;
+  }
+  25% {
+    rotate: 180deg;
+    font-size: 41px;
+  }
+  37.5% {
+    rotate: 270deg;
+    font-size: 40px;
+  }
+  50% {
+    rotate: 360deg;
+    font-size: 39px;
+  }
+  62.5% {
+    rotate: 450deg;
+    font-size: 38px;
+  }
+  75% {
+    rotate: 540deg;
+    font-size: 37px;
+  }
+  87.5% {
+    rotate: 630deg;
+    font-size: 36px;
+  }
+  100% {
+    rotate: 720deg;
+    font-size: 35px;
+  }
+}
 .modalCrossButton:hover {
   cursor: pointer;
+  font-size: 38px;
 }
 @media only screen and (min-width: 1400px) {
   .top-heading {
@@ -1052,6 +1101,11 @@ input::-webkit-inner-spin-button {
     width: 230px;
     height: 80px;
     font-size: 21px;
+  }
+
+  .btn-1:hover,.btn-2:hover{
+    font-size: 23px;
+    height: 85px;
   }
   .logoSideHeading {
     gap: 80px;
@@ -1454,7 +1508,10 @@ input::-webkit-inner-spin-button {
     height: 81px;
     font-size: 21px;
   }
-
+.btn-3:hover{
+  font-size: 23px;
+  height: 85px;
+}
   .twoLogos {
     display: flex;
     gap: 60px;
@@ -2019,7 +2076,6 @@ input::-webkit-inner-spin-button {
     width: 80%;
     height: 100%;
     background-color: #0f87ff;
-    
   }
   .travelStoriesHeading {
     font-size: 45px;
@@ -2278,12 +2334,12 @@ input::-webkit-inner-spin-button {
   }
   .modalCrossButton {
     position: absolute;
-    top: 2%;
-    right: 7%;
-    width: 5%;
-    height: 5%;
-
-    background-color: #38404c;
+    top: 3.5%;
+    right: 6%;
+    width: 8%;
+    
+    
+    background-color: #403E55;
 
     font-size: 35px;
   }

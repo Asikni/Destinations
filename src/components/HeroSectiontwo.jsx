@@ -57,7 +57,7 @@ function HeroTwo({setIsOpen}) {
       <div className="rightArrowHero" onClick={imageToTheRight}>
         {">"}
       </div>
-      <div className="buttonsHeroSection">
+      <div className="buttonsHeroSection" >
         
         {images[currentImageIndex].buttonOne}
        
