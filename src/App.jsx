@@ -8,6 +8,7 @@ import Contact from "./components/contactSection";
 import Footer from "./components/footerSection";
 import HeroTwo from "./components/HeroSectiontwo";
 import Modal from "./modal";
+import ContactSection2 from "./components/contactSection2";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       <HiddenGems />
       <Treks />
       <StoriesSection />
+      <ContactSection2 />
       <Contact />
       <Footer />
     </div>

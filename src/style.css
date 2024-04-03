@@ -1046,6 +1046,13 @@ input::-webkit-inner-spin-button {
     font-size: 35px;
   }
 }
+
+.error {
+  color: #fc8181;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+}
 .modalCrossButton:hover {
   cursor: pointer;
   font-size: 38px;
